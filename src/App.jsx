@@ -1,9 +1,10 @@
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Presentation from "./pages/brand/Presentation"
 
 const App = () => {
-  
 
+  return (
+    <Presentation />
+  )
 }
 
 export default App

@@ -1,0 +1,36 @@
+.logoColumn{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 992px){
+    #presentation{
+        .row:last-child{
+            justify-content: space-evenly;
+            #h1column{
+                display: flex;
+                align-items: center;
+                text-align: start;
+            }
+            #introVideoColumn{
+                display: flex;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    #presentation{
+        .row:last-child{
+            justify-content: center;
+            #h1column{
+                display: block;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            #introVideoColumn{
+                display: block;
+            }
+        }
+    }
+}
