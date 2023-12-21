@@ -8,7 +8,7 @@ import Video from './Video'
 // Constants
 const logoClasses = 'd-flex justify-content-center logoColumn'
 
-const Presentation = () => (
+const Introduction = () => (
     <Container fluid id="presentation">
 
         <Row>
@@ -30,4 +30,4 @@ const Presentation = () => (
     </Container>
 )
 
-export default Presentation
+export default Introduction

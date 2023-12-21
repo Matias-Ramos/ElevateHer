@@ -1,9 +1,9 @@
-import Presentation from "./pages/brand/Presentation"
+import Introduction from "./pages/introduction/Introduction"
 
 const App = () => {
 
   return (
-    <Presentation />
+    <Introduction />
   )
 }
 
