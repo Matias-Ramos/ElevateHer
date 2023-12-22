@@ -9,8 +9,8 @@ const iconsColStyling = 'd-flex justify-content-center'
 const IconMapper = ({ icons }) => {
     return (
         <Row className={iconsRowStyling}>
-            {icons.map(icon => (
-                <Col className={iconsColStyling}>
+            {icons.map( (icon, index) => (
+                <Col key={index} className={iconsColStyling}>
                     <IconInCircle>
                         {icon}
                     </IconInCircle>

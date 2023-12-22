@@ -1,5 +1,6 @@
 import Introduction from "./pages/introduction/Introduction"
-import BigPicture from "./pages/program/BigPicture/BigPicture"
+import BigPicture from "./pages/program/bigPicture/BigPicture"
+import Phases from "./pages/program/phases/Phases"
 
 const App = () => {
 
@@ -7,6 +8,7 @@ const App = () => {
     <>
       <Introduction />
       <BigPicture />
+      <Phases />
     </>
   )
 }
