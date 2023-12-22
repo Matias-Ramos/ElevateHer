@@ -1,11 +1,11 @@
-const videoWrapperClasses = {
+const wrapperStyling = {
     position: "relative",
     height: 0,
     width: "100%",
     paddingBottom: "56.25%",
     overflow: "hidden"
 }
-const videoIframeClasses = {
+const iframeStyling = {
     position: "absolute",
     top: 0,
     left: 0,
@@ -14,14 +14,13 @@ const videoIframeClasses = {
 }
 
 const Video = () => (
-    <div style={videoWrapperClasses}>
+    <div style={wrapperStyling}>
         <iframe
-            style={videoIframeClasses}
+            style={iframeStyling}
             src="https://www.youtube.com/embed/iaZx5FLPlXo?si=tZWly1OmZDYaRxzh"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
+            allowFullScreen>
         </iframe>
     </div>
 )

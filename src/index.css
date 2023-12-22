@@ -6,3 +6,13 @@
 h1{
   font-size: 1.2rem;
 }
+section:nth-child(odd){
+  background-color: #f8f9fa;
+}
+section:nth-child(even){
+  background-color: #e9ecef;
+}
+section{
+  padding-top:3rem;
+  padding-bottom:3rem;
+}
