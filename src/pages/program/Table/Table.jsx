@@ -56,7 +56,7 @@ export default function Table() {
         <section>
             <Container fluid>
                 <Row className='justify-content-center'>
-                    <Col md={9} lg={8} xl={7} xxl={6}>
+                    <Col md={9} lg={8} xl={7} xxl={7}>
                         <Header2 />
                         <TableContainer component={Paper}>
                             <TableMui sx={{ width: "100%" }} aria-label="Tabla de precios por separado">
