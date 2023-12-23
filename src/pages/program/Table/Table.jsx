@@ -3,7 +3,6 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import TableMui from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';

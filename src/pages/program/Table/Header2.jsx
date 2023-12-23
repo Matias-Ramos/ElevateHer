@@ -1,10 +1,10 @@
 const Header2 = () => (
     <>
         <h2 className='mb-4 text-center'>Qué incluye el programa ElevateHer?</h2>
-        <div class="vtaVivChevronContainer">
-            <div class="vtaVivChevron"></div>
-            <div class="vtaVivChevron"></div>
-            <div class="vtaVivChevron"></div>
+        <div class="chevronContainer">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
         </div>
     </>
 )
