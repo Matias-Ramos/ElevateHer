@@ -7,7 +7,7 @@ import DetailMapper from './DetailMapper';
 import { useState } from 'react';
 import Picture from './Picture';
 // Styling
-const containerStyling = "d-flex flex-column flex-lg-row"
+const containerStyling = "d-flex flex-column flex-lg-row phasesContainer"
 const boxStyling = { width: '100%', height: '100%' }
 
 const Phases = () => {
@@ -18,7 +18,7 @@ const Phases = () => {
 
   return (
     <section>
-      <div className={containerStyling} style={{ height: "25rem"}}>
+      <div className={containerStyling}>
         <Box sx={boxStyling}>
           <Tabs activePhase={activePhase} handleChg={handleChg} />
           <DetailMapper activePhase={activePhase} />

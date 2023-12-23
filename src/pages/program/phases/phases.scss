@@ -1,0 +1,11 @@
+@media only screen and (min-width: 992px){
+    .phasesContainer{
+        height: 25rem;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .phasesContainer{
+        height: 100%;
+    }
+}
