@@ -4,6 +4,7 @@ import BigPicture from "./pages/program/bigPicture/BigPicture"
 import Phases from "./pages/program/phases/Phases"
 import Warranty from "./pages/program/warranty/Warranty"
 import Target from "./pages/target/Target"
+import Testimonies from "./pages/testimonies/Testimonies"
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
       <Table />
       <Warranty />
       <Target />
+      <Testimonies />
     </>
   )
 }

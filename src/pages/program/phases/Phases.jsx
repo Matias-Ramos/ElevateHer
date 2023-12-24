@@ -15,11 +15,11 @@ const Phases = () => {
   const handleChg = (_evt, newValue) => {
     setActivePhase(newValue);
   };
-
+  
   return (
     <section>
       <div className={containerStyling}>
-        <Box sx={boxStyling}>
+        <Box sx={boxStyling} className='ps-lg-4'>
           <Tabs activePhase={activePhase} handleChg={handleChg} />
           <DetailMapper activePhase={activePhase} />
         </Box>
