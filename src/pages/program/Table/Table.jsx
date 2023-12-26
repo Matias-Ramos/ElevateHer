@@ -51,7 +51,7 @@ const rows = [
     createData('Acceso a la comunidad y Chequeo por grupo de Whatsapp', "-"),
 ];
 
-export default function Table() {
+const Table = () => {
     return (
         <section>
             <Container fluid>
@@ -84,3 +84,5 @@ export default function Table() {
         </section>
     );
 }
+
+export default Table;
