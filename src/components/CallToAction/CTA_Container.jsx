@@ -7,7 +7,7 @@ import ScheduleBtn from './ScheduleBtn';
 import FormattedText from './FormattedText';
 
 const CTA_Container = ({ text, isCTAsection = false }) => (
-    <Container id="callToAction">
+    <Container className="callToAction">
         <Row>
             <Col className='col' xs={12} md={6} lg={12}>
                 <FormattedText text={text} />

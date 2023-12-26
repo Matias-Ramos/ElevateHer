@@ -5,15 +5,15 @@ import Carousel from 'react-bootstrap/Carousel';
 // Data
 import testimonies from "./testomonyList";
 // BTS
-import Col from 'react-bootstrap/Col';
+import { Image } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import { Image } from 'react-bootstrap';
+import Col from 'react-bootstrap/Col';
 
 
 const Testimonies = () => {
   return (
-    <section id="testimoniesContainer">
+    <section id="testimonies">
         <Carousel indicators={false}>
           {testimonies.map((testimony, i) => (
             <Carousel.Item key={i}>

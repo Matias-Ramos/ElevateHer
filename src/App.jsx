@@ -7,21 +7,29 @@ import Warranty from "./pages/program/warranty/Warranty"
 import Target from "./pages/target/Target"
 import Testimonies from "./pages/testimonies/Testimonies"
 import CTA_Section from "./components/CallToAction/CTA_Section"
+import Signature from "./pages/Signature/Signature"
+import Footer from "./pages/footer/Footer"
 // Props
 const CTAtext1 = 'Tu mejor versión te espera'
 const CTAtext2 = 'Sé tu propia motivación'
+// Navigation
+import { BrowserRouter } from 'react-router-dom'
 
 const App = () => (
   <>
-    <Introduction />
-    <CTA_Section text={CTAtext1} />
-    <BigPicture />
-    <Phases />
-    <Table />
-    <Warranty />
-    <Target />
-    <Testimonies />
-    <CTA_Section text={CTAtext2} />
+    <BrowserRouter>
+      <Introduction />
+      <CTA_Section text={CTAtext1} />
+      <BigPicture />
+      <Phases />
+      <Table />
+      <Warranty />
+      <Target />
+      <Testimonies />
+      <CTA_Section text={CTAtext2} />
+      <Footer />
+    </BrowserRouter>
+    {/* <Signature /> */}
   </>
 )
 

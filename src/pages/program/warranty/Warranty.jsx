@@ -12,7 +12,7 @@ const iconStyling = { color: "black", size: "75%" }
 const rowStyling = "d-lg-flex justify-content-center"
 
 const Warranty = () => (
-    <section>
+    <section id="warranty">
         <Container>
             <Row className={rowStyling}>
                 <Col xs={12} lg={11} className={firstColStyling}>

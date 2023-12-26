@@ -15,7 +15,7 @@ const BigPicture = () => {
     const icons = [<GiBodyBalance />, <GiBrain />, <PiBowlFoodDuotone />];
 
     return (
-        <section>
+        <section id="aboutTheProgram">
             <Container fluid>
                 <Row className='justify-content-center'>
                     <Col sm={12} md={2} >

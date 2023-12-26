@@ -13,7 +13,7 @@ const sellingSpeech = 'El camino se recorre dando el primer paso'
 
 const Target = () => {
     return (
-        <section>
+        <section id="target">
             <Container>
                 <Row className={rowStyling}>
                     <Col lg={7} xl={5}>
