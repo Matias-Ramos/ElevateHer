@@ -85,4 +85,4 @@ const MyTable = () => {
     );
 }
 
-export default MyTable;
+export {MyTable};

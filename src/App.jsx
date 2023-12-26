@@ -1,6 +1,6 @@
 // Components
 import Introduction from "./pages/introduction/Introduction.jsx"
-import MyTable from './pages/program/table/Table.jsx'
+import {MyTable} from './pages/program/table/Table.jsx'
 import BigPicture from './pages/program/bigPicture/BigPicture.jsx'
 import Phases from "./pages/program/phases/Phases.jsx"
 import Warranty from "./pages/program/warranty/Warranty.jsx"
