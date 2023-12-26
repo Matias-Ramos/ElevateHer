@@ -1,13 +1,13 @@
 // Components
-import Introduction from "./pages/introduction/Introduction"
-import MyTable from './pages/program/table/Table'
-import BigPicture from './pages/program/bigPicture/BigPicture'
-import Phases from "./pages/program/phases/Phases"
-import Warranty from "./pages/program/warranty/Warranty"
-import Target from "./pages/target/Target"
-import Testimonies from "./pages/testimonies/Testimonies"
-import CTA_Section from "./components/CallToAction/CTA_Section"
-import Footer from "./pages/footer/Footer"
+import Introduction from "./pages/introduction/Introduction.jsx"
+import MyTable from './pages/program/table/Table.jsx'
+import BigPicture from './pages/program/bigPicture/BigPicture.jsx'
+import Phases from "./pages/program/phases/Phases.jsx"
+import Warranty from "./pages/program/warranty/Warranty.jsx"
+import Target from "./pages/target/Target.jsx"
+import Testimonies from "./pages/testimonies/Testimonies.jsx"
+import CTA_Section from "./components/CallToAction/CTA_Section.jsx"
+import Footer from "./pages/footer/Footer.jsx"
 // Navigation
 import { BrowserRouter } from 'react-router-dom'
 // Props
