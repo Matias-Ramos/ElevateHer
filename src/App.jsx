@@ -1,6 +1,6 @@
 // Components
 import Introduction from "./pages/introduction/Introduction"
-import Table from './pages/program/table/Table'
+import MyTable from './pages/program/table/Table'
 import BigPicture from './pages/program/bigPicture/BigPicture'
 import Phases from "./pages/program/phases/Phases"
 import Warranty from "./pages/program/warranty/Warranty"
@@ -21,7 +21,7 @@ const App = () => (
       <CTA_Section text={CTAtext1} />
       <BigPicture />
       <Phases />
-      <Table />
+      <MyTable />
       <Warranty />
       <Target />
       <Testimonies />
