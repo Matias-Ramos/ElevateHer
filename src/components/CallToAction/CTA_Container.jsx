@@ -3,40 +3,20 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import ScheduleBtn from './ScheduleBtn';
-// Hooks
-import useMediaQuery from '@mui/material/useMediaQuery';
+// Custom components
+import FormattedText from './FormattedText';
 
-
-const CTA_Container = ({text}) => {
-
-    const isSmallPhone = useMediaQuery('(max-width:374px)');
-    const FormattedText = () => {
-        if(isSmallPhone){
-            const half = Math.ceil(text.length / 2);
-            const firstHalf = text.slice(0, half)
-            const secondHalf = text.slice(half)
-            return(
-            <>
-                <div>
-                    {firstHalf} <br /> {secondHalf}
-                </div>
-            </>
-            )
-        } else return(text)
-    }
-
-
-  return (
+const CTA_Container = ({ text, isCTAsection = false }) => (
     <Container id="callToAction">
         <Row>
             <Col className='col' xs={12} md={6} lg={12}>
-                <FormattedText />
+                <FormattedText text={text} />
             </Col>
-            <Col className='col' xs={12} md={6} lg={10}>
-                <ScheduleBtn  />
+            <Col className='col' xs={12} md={6} lg={isCTAsection ? 6 : 10}>
+                <ScheduleBtn />
             </Col>
         </Row>
     </Container>
-  )
-}
+)
+
 export default CTA_Container
