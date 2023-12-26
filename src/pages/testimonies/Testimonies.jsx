@@ -1,3 +1,5 @@
+// Custom Components
+import Text from './Text';
 // BTS Components
 import Carousel from 'react-bootstrap/Carousel';
 // Data
@@ -7,32 +9,23 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import { Image } from 'react-bootstrap';
-// Hooks
-import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 const Testimonies = () => {
-  const isMobile = useMediaQuery('(max-width:576px)');
   return (
     <section id="testimoniesContainer">
-      <div>
-        <Carousel
-          indicators={isMobile ? true : false}
-        >
+        <Carousel indicators={false}>
           {testimonies.map((testimony, i) => (
-            <Carousel.Item key={i} interval={100000000}>
+            <Carousel.Item key={i}>
               <Container>
                 <Row>
-                  <Col className='testimonyCol d-flex'>
-                    <div className='mt-auto mb-auto'>
-                      <span className='d-block mb-2'>{testimony.written}</span>
-                      <span>{testimony.personName}</span>
-                    </div>
+                  <Col className='testimonyCol'>
+                    <Text testimony={testimony} />
                   </Col>
-                  <Col className='testimonyCol d-flex justify-content-center'>
+                  <Col className='testimonyCol'>
                     <Image
                       src={testimony.img}
-                      alt="First slide"
-
+                      alt={`Imagen antes y despues #${i}`}
                     />
                   </Col>
                 </Row>
@@ -40,7 +33,6 @@ const Testimonies = () => {
             </Carousel.Item>
           ))}
         </Carousel>
-      </div>
     </section>
   )
 }

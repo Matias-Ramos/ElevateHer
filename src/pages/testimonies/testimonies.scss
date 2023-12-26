@@ -1,13 +1,15 @@
-#testimoniesContainer {
-    // height: 25rem;
-    background-color: rgb(227, 227, 227);
-    margin-bottom: 25rem;
-}
-
 $custom-carousel-prev-arrow: "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E";
 $custom-carousel-next-arrow: "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E";
 
 #testimoniesContainer{
+    
+    .testimonyCol{
+        display: flex;
+        &:last-child{
+            justify-content: center;
+        }
+    }   
+
     // Carousel arrow color chg.
     .carousel-control-prev-icon {
         background-image: url($custom-carousel-prev-arrow);
@@ -29,11 +31,36 @@ $custom-carousel-next-arrow: "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http
     }
 }
 
-.testimonyCol:first-child{
+@media only screen and (max-width: 768px) {
     
-    span:last-child{
-        display: block;
-        text-align: right;
+    #testimoniesContainer {
+        .testimonyCol:first-child {
+            margin-bottom: 1rem;
+        }
+    
+        .testimonyCol:last-child {
+            max-height: 20rem;
+    
+            img {
+                max-height: 100%;
+            }
+        }
+        
+        // BTS
+        .carousel-control-prev,
+        .carousel-control-next {
+            margin: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .carousel-control-prev {
+            left: 10px;
+        }
+
+        .carousel-control-next {
+            right: 10px;
+        }
     }
 }
 
@@ -51,22 +78,6 @@ $custom-carousel-next-arrow: "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http
         }
     }
 }
-@media only screen and (max-width: 768px){
-    .testimonyCol:first-child{
-        margin-bottom: 1rem;
-        span:last-child{
-            display: block;
-            text-align: right;
-        }
-    }
-    .testimonyCol:last-child{
-        max-height: 20rem;
-        img{
-            max-height: 100%;
-        }
-    }
-}
-
 @media only screen and (min-width: 1200px){
     #testimoniesContainer{
         .carousel-control-prev {
@@ -78,19 +89,4 @@ $custom-carousel-next-arrow: "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http
     }
 }
 
-@media only screen and (max-width: 576px){
-    #testimoniesContainer{
-        .carousel-indicators{
-            margin-bottom: 0;
-            .active {
-                background-color: black;
-            }
-        }
-        .carousel-control-prev {
-            left: 10px;
-        }
-        .carousel-control-next{
-            right: 10px;
-        }
-    }
-}
+
