@@ -7,7 +7,7 @@ import BigPicture from '../pages/program/bigPicture/BigPicture.jsx'
 import Phases from "../pages/program/phases/Phases.jsx"
 import Table from '../pages/program/table/Table.jsx'
 import Warranty from "../pages/program/warranty/Warranty.jsx"
-import Target from "../pages/target/Target.jsx"
+import Benefits from "../pages/target/Benefits.jsx"
 import Testimonies from "../pages/testimonies/Testimonies.jsx"
 // Navigation
 import { BrowserRouter } from 'react-router-dom'
@@ -24,7 +24,7 @@ const App = () => (
       <Phases />
       <Table />
       <Warranty />
-      <Target />
+      <Benefits />
       <Testimonies />
       <Faq />
       <CTA_Section text={CTAtext2} />

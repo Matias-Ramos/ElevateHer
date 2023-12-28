@@ -11,7 +11,7 @@ const secondColStyling = 'd-flex align-items-center'
 // Const
 const sellingSpeech = 'El camino se recorre dando el primer paso'
 
-const Target = () => {
+const Benefits = () => {
     return (
         <section id="target">
             <Container>
@@ -27,4 +27,4 @@ const Target = () => {
         </section>
     )
 }
-export default Target
+export default Benefits
