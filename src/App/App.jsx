@@ -1,5 +1,6 @@
 // Components
 import CTA_Section from "../components/CallToAction/CTA_Section.jsx"
+import Faq from "../pages/faq/Faq.jsx"
 import Footer from "../pages/footer/Footer.jsx"
 import Introduction from "../pages/introduction/Introduction.jsx"
 import BigPicture from '../pages/program/bigPicture/BigPicture.jsx'
@@ -25,6 +26,7 @@ const App = () => (
       <Warranty />
       <Target />
       <Testimonies />
+      <Faq />
       <CTA_Section text={CTAtext2} />
       <Footer />
     </BrowserRouter>
