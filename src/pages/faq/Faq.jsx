@@ -11,10 +11,10 @@ const Faq = () => (
     <section>
         <Container>
             <Row className={h2rowStyling}>
-                <Col md={10} lg={9} xl={8} xxl={7} className={h2containerStyling}>
+                <Col md={10} lg={10} xl={9} xxl={8} className={h2containerStyling}>
                     <Header />
                 </Col>
-                <Col md={10} lg={9} xl={8} xxl={7}>
+                <Col md={10} lg={10} xl={9} xxl={8}>
                     <Accordion>
                         <CardMapper />
                     </Accordion>

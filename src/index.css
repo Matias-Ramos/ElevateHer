@@ -3,9 +3,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
 h1{
   font-size: 1.2rem;
+  font-style: italic;
 }
+h1,h2,h3{
+  font-family: 'Bitter', serif;
+}
+
 section:nth-child(odd){
   background-color: #f8f9fa;
 }
