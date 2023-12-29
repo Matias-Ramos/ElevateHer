@@ -10,6 +10,7 @@ import Row from 'react-bootstrap/Row';
 const firstColStyling = "d-flex align-items-center mb-3"
 const iconStyling = { color: "black", size: "75%" }
 const rowStyling = "d-lg-flex justify-content-center"
+const headerStyling = "ms-3 mb-0";
 
 const Warranty = () => (
     <section id="warranty">
@@ -21,7 +22,7 @@ const Warranty = () => (
                             <HiCheckBadge />
                         </IconContext.Provider>
                     </IconInCircle>
-                    <h2 className="ms-3">Garantía condicional</h2>
+                    <h2 className={headerStyling}>Garantía condicional</h2>
                 </Col>
                 <Col lg={11}>
                     <p>Si al final de los tres meses no has visto ningún cambio, puedes agendar una llamada y revisaré con mi equipo si eres elegible para el <b>reembolso</b>. Esto dependerá que hayas asistido a todas nuestras reuniones virtuales, chequeos semanales, que demuestres desde la aplicación que cumpliste con el 95% de los entrenamientos, llevaste el registro de alimentación y cumpliste con los hábitos que te agendé en el cronograma al 100%.</p>
