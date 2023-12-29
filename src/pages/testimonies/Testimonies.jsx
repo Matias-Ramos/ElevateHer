@@ -16,7 +16,7 @@ const Testimonies = () => {
     <section id="testimonies">
         <Carousel indicators={false}>
           {testimonies.map((testimony, i) => (
-            <Carousel.Item key={i}>
+            <Carousel.Item key={i} interval={7000}>
               <Container>
                 <Row>
                   <Col className='testimonyCol'>

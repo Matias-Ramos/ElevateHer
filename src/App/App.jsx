@@ -7,7 +7,7 @@ import BigPicture from '../pages/program/bigPicture/BigPicture.jsx'
 import Phases from "../pages/program/phases/Phases.jsx"
 import Table from '../pages/program/table/Table.jsx'
 import Warranty from "../pages/program/warranty/Warranty.jsx"
-import Benefits from "../pages/target/Benefits.jsx"
+import Benefits from "../pages/benefits/Benefits.jsx"
 import Testimonies from "../pages/testimonies/Testimonies.jsx"
 // Mui styling
 import { createTheme, ThemeProvider } from '@mui/material/styles'
@@ -40,7 +40,7 @@ const App = () => (
 const THEME = createTheme({
   typography: {
    "fontFamily": `"Nunito Sans", sans-serif`,
-   "fontSize": "1.2rem",
+   "fontSize": 18,
    "lineHeight": 1.7,
   }
 });

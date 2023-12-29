@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App/App.jsx'
 // Styles`
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.scss';
+import './summoner.scss';
 import './index.css';
 
 
