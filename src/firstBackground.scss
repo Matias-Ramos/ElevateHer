@@ -1,6 +1,6 @@
 #firstBackground {
     color: white;
-    background-image: url("./assets/sharedBackground3.svg");
+    background-image: url("./assets/firstBackground.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -17,6 +17,6 @@
 
 @media only screen and (max-width: 991px) {
     #firstBackground {
-        background-image: url("./assets/sharedBackgroundMobile.svg");
+        background-image: url("./assets/firstBackgroundMobile.svg");
     }
 }

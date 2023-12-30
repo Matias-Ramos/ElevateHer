@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // Components
-import Logo from './Logo';
+import Logo from '../../components/Logo';
 import Video from './Video'
 import Text from './Text';
 // Grid sys.

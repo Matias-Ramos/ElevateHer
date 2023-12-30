@@ -1,14 +1,19 @@
 // Mui
 import Box from '@mui/material/Box';
 // Components
-import Tabs from './Tabs';
-import DetailMapper from './DetailMapper';
+import Tabs from './Tabs/Tabs';
+import PanelMapper from './Panel/PanelMapper';
 // Hooks
 import { useState } from 'react';
 import Picture from './Picture';
 // Styling
 const containerStyling = "d-flex flex-column flex-lg-row phasesContainer"
-const boxStyling = { width: '100%', height: '100%' }
+const boxStyling = { width: '100%', height: '100%', paddingTop: "8rem"}
+const sectionStyling = { position: "relative", backgroundColor: "#5e4869"}
+const logoCtStyling = { position: "absolute", display: "flex", justifyContent: "center"}
+
+
+import Logo from '../../../components/Logo';
 
 const Phases = () => {
   const [activePhase, setActivePhase] = useState(0);
@@ -17,17 +22,20 @@ const Phases = () => {
   };
   
   return (
-    <section>
+    <section id="phasesSection" style={sectionStyling}>
       <div className={containerStyling}>
-        <Box sx={boxStyling} className='ps-lg-4'>
+        <Box sx={boxStyling} id="tabsContainer">
           <Tabs activePhase={activePhase} handleChg={handleChg} />
-          <DetailMapper activePhase={activePhase} />
+          <PanelMapper activePhase={activePhase} />
         </Box>
         <Picture />
       </div>
-      
+      <div id="logoContainer" style={logoCtStyling}>
+        <Logo />
+      </div>
     </section>
   );
 }
+
 
 export default Phases;

@@ -1,7 +1,4 @@
-// Components
-import TabDetail from './TabDetail';
-
-const phasesDetail = [
+const phasesData = [
     {
         id: 0,
         nutshell: "Evaluación y Compromiso",
@@ -29,27 +26,5 @@ const phasesDetail = [
         objectiveB: "Estrategias para mantener los resultados a largo plazo implementando hábitos sostenibles y autoevaluación continua."
     },
 
-]
-const DetailMapper = ({ activePhase }) => (
-    <div>
-        {phasesDetail.map(phase => (
-            <TabDetail
-                key={phase.id}
-                activePhase={activePhase}
-                index={phase.id}>
-
-                {phase.nutshell}<br />
-                <i>{phase.days}</i><br />
-                {phase.objectiveA}
-                {phase.objectiveB && (
-                    <>
-                    <br />
-                    {phase.objectiveB}
-                    </>
-                )}
-
-            </TabDetail>
-        ))}
-    </div>
-)
-export default DetailMapper
+];
+export default phasesData;

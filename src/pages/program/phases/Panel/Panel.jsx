@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 // Typechecking
 import PropTypes from 'prop-types';
 
-const TabDetail = ({ children, activePhase, index, ...other }) => (
+const Panel = ({ children, activePhase, index, ...other }) => (
     <div
         role="tabpanel"
         hidden={activePhase !== index}
@@ -20,10 +20,10 @@ const TabDetail = ({ children, activePhase, index, ...other }) => (
     </div>
 );
 
-TabDetail.propTypes = {
+Panel.propTypes = {
     children: PropTypes.node,
     index: PropTypes.number.isRequired,
     activePhase: PropTypes.number.isRequired,
 };
 
-export default TabDetail;
+export default Panel;

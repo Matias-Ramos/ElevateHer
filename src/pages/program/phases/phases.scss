@@ -1,11 +1,56 @@
-@media only screen and (min-width: 992px){
+#phasesSection{
     .phasesContainer{
-        height: 25rem;
+        background-color: #43334b;
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+        color: white;
+    }
+    #logoContainer{
+        img{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
     }
 }
+
 
 @media only screen and (max-width: 991px){
     .phasesContainer{
         height: 100%;
+        #anaPic{
+            width: 100%
+        }
+    }
+    #logoContainer{
+        bottom: 3%;
+        img{
+            width: 60%
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    #phasesSection {
+        #tabsContainer{
+            padding-left: 4rem;
+            margin-top: 1.75rem;
+        }
+        #logoContainer{
+            bottom: 0%;
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    #phasesSection{
+        padding-top: 1rem;
+        .phasesContainer{
+            height: 50rem;
+            #tabsContainer{
+                padding-left: 1rem
+            }
+            #anaPic{
+                width: 50%
+            }
+        }
+        #logoContainer{
+            bottom: 0;
+        }
     }
 }
