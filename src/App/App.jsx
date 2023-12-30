@@ -21,9 +21,11 @@ const App = () => (
   <>
     <BrowserRouter>
       <ThemeProvider theme={THEME}>
-        <Introduction />
-        <CTA_Section text={CTAtext1} />
-        <BigPicture />
+        <div id="firstBackground">
+          <Introduction />
+          <CTA_Section text={CTAtext1} />
+          <BigPicture />
+        </div>
         <Phases />
         <Table />
         <Warranty />

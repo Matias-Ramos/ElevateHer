@@ -1,0 +1,22 @@
+#firstBackground {
+    color: white;
+    background-image: url("./assets/sharedBackground3.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-shadow: 2px 2px 2px rgba(76, 42, 42, 0.7);
+
+    .ctaSection {
+        background: rgba( 190, 190, 220, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.2 );
+        backdrop-filter: blur( 1px );
+        -webkit-backdrop-filter: blur( 1px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #firstBackground {
+        background-image: url("./assets/sharedBackgroundMobile.svg");
+    }
+}

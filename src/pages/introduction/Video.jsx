@@ -6,6 +6,7 @@ const wrapperStyling = {
     overflow: "hidden"
 }
 const iframeStyling = {
+    borderRadius: 7,
     position: "absolute",
     top: 0,
     left: 0,

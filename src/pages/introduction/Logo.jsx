@@ -1,9 +1,9 @@
 // Assets
 import Image from 'react-bootstrap/Image';
-import logo from '../../assets/logo/BlackLogo-NoBckgr.svg'
+import logo from '../../assets/logo/ColorLogo-NoBckgr.svg'
 
 const Logo = () => (
-    <Image src={logo} height={"auto"} width={250}  />
+    <Image id="logo" src={logo} height={"auto"} width="30%" alt="ElevateHer By Ana Restrepo"/>
 )
 
 export default Logo

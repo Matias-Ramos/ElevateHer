@@ -5,26 +5,29 @@ import Col from 'react-bootstrap/Col';
 // Components
 import Logo from './Logo';
 import Video from './Video'
-// Styling
-const logoStyling = 'd-flex justify-content-center pb-4';
-const secondRowStyling = 'px-lg-4 px-xl-0';
+import Text from './Text';
+// Grid sys.
+const breakpointsOne = { sm: 11, md: 10, lg: 5, xl: 4 };
+const breakpointsTwo = { sm: 12, md: 11, lg: 7, xl: 6 };
+
 
 const Introduction = () => (
-    <section>
-        <Container fluid id="presentation">
-
+    <section id="presentation">
+        <Container fluid>
             <Row>
-                <Col className={logoStyling}>
+
+                <Col {...breakpointsOne}>
+                </Col>
+
+                <Col {...breakpointsTwo} id="logoCol">
                     <Logo />
                 </Col>
-            </Row>
 
-            <Row className={secondRowStyling}>
-                <Col sm={11} md={10} lg={5} xl={4} id="h1column">
-                    <h1>Revoluciona tu cuerpo, fortalece tu mente y sana tu relación con la comida con el método <b>EmpowerHer</b> en tan solo 12 semanas de compromiso y dedicación.</h1>
+                <Col {...breakpointsOne} id="h1column">
+                    <Text />
                 </Col>
 
-                <Col sm={12} md={11} lg={7} xxl={6} id="introVideoColumn">
+                <Col {...breakpointsTwo}>
                     <Video />
                 </Col>
 

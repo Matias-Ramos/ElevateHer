@@ -8,5 +8,6 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 # Typography
-Headers: Bitter Italic 400 / Semi bold 600
-Regular text: Nunito Regular 400
+H1: Inter Tight Black 900.
+Other headers: Bitter Italic 400 / Semi bold 600.
+Regular text: Nunito Regular 400.
