@@ -10,10 +10,18 @@ const rowStyling = 'flex-column flex-lg-row justify-content-lg-evenly'
 const secondColStyling = 'd-flex align-items-center'
 // Const
 const sellingSpeech = 'El camino se recorre dando el primer paso'
+// Styling
+const sectionStyling = {
+    paddingTop: '8rem',
+    paddingBottom: '5rem',
+    backgroundPosition: 'left',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+};
 
 const Benefits = () => {
     return (
-        <section id="target">
+        <section id="benefits" style={sectionStyling}>
             <Container>
                 <Row className={rowStyling}>
                     <Col lg={7} xl={5}>

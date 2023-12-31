@@ -1,0 +1,13 @@
+#benefits .callToAction .row .col:first-child{
+    text-shadow: none;
+}
+@media only screen and (max-width: 576px) {
+    #benefits{
+        background-image: url("./assets/benefitsBlobBckgMobile.svg");
+    }
+}
+@media only screen and (min-width: 577px) {
+    #benefits{
+        background-image: url("./assets/benefitsBlobBckgDesktop.svg");
+    }
+}
