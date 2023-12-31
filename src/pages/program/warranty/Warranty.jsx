@@ -11,15 +11,19 @@ const firstColStyling = "d-flex align-items-center mb-3"
 const iconStyling = { color: "black", size: "75%" }
 const rowStyling = "d-lg-flex justify-content-center"
 const headerStyling = "ms-3 mb-0";
+const warrantyStyling = {
+    boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
+    backgroundColor: '#d8c690',
+};
 
 const Warranty = () => (
-    <section id="warranty">
+    <section id="warranty" style={warrantyStyling}>
         <Container>
             <Row className={rowStyling}>
                 <Col xs={12} lg={11} className={firstColStyling}>
                     <IconInCircle>
                         <IconContext.Provider value={iconStyling}>
-                            <HiCheckBadge />
+                            <HiCheckBadge color="#43334b"/>
                         </IconContext.Provider>
                     </IconInCircle>
                     <h2 className={headerStyling}>Garantía condicional</h2>

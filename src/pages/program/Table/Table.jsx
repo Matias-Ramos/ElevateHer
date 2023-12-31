@@ -21,7 +21,7 @@ const sectionStyling = {
 
 const Table = () => {
     return (
-        <section style={sectionStyling}>
+        <section id="table" style={sectionStyling}>
             <Container fluid>
                 <Row className='justify-content-center'>
                     <Col md={9} lg={8} xl={7} xxl={7}>
