@@ -19,10 +19,10 @@ const Testimonies = () => {
             <Carousel.Item key={i} interval={7000}>
               <Container className='outerRow'>
                     <Row>
-                        <Col className='testimonyCol ps-lg-4' lg={7}>
+                        <Col className='testimonyCol ps-lg-4' sm={12} md={6}>
                             <Text testimony={testimony} />
                         </Col>
-                        <Col className='testimonyCol' >
+                        <Col className='testimonyCol' sm={12} md={6}>
                           <Image
                             src={testimony.img}
                             alt={`Imagen antes y despues #${i}`}
