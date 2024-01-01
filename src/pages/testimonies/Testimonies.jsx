@@ -17,9 +17,9 @@ const Testimonies = () => {
         <Carousel indicators={false} id="carouselTestim" interval={null}>
           {testimonies.map((testimony, i) => (
             <Carousel.Item key={i} interval={7000}>
-              <Container className='outerRow'>
+              <Container className='gradient'>
                     <Row>
-                        <Col className='testimonyCol ps-lg-4' sm={12} md={6}>
+                        <Col className='testimonyCol' sm={12} md={6}>
                             <Text testimony={testimony} />
                         </Col>
                         <Col className='testimonyCol' sm={12} md={6}>
