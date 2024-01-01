@@ -22,7 +22,7 @@ const Testimonies = () => {
                         <Col className='testimonyCol ps-lg-4' lg={7}>
                             <Text testimony={testimony} />
                         </Col>
-                        <Col className='testimonyCol'>
+                        <Col className='testimonyCol' >
                           <Image
                             src={testimony.img}
                             alt={`Imagen antes y despues #${i}`}
