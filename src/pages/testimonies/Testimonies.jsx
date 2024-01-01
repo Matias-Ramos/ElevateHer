@@ -14,21 +14,21 @@ import Col from 'react-bootstrap/Col';
 const Testimonies = () => {
   return (
     <section id="testimonies">
-        <Carousel indicators={false}>
+        <Carousel indicators={false} id="carouselTestim" interval={null}>
           {testimonies.map((testimony, i) => (
             <Carousel.Item key={i} interval={7000}>
-              <Container>
-                <Row>
-                  <Col className='testimonyCol'>
-                    <Text testimony={testimony} />
-                  </Col>
-                  <Col className='testimonyCol'>
-                    <Image
-                      src={testimony.img}
-                      alt={`Imagen antes y despues #${i}`}
-                    />
-                  </Col>
-                </Row>
+              <Container className='outerRow'>
+                    <Row>
+                        <Col className='testimonyCol ps-lg-4' lg={7}>
+                            <Text testimony={testimony} />
+                        </Col>
+                        <Col className='testimonyCol'>
+                          <Image
+                            src={testimony.img}
+                            alt={`Imagen antes y despues #${i}`}
+                          />
+                        </Col>
+                    </Row>
               </Container>
             </Carousel.Item>
           ))}
