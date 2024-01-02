@@ -42,7 +42,7 @@ const App = () => (
 const THEME = createTheme({
   typography: {
    "fontFamily": `"Nunito Sans", sans-serif`,
-   "fontSize": 20,
+   "fontSize": 17,
    "lineHeight": 1.7,
   }
 });
