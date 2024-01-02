@@ -13,7 +13,7 @@ const sellingSpeech = 'El camino se recorre dando el primer paso'
 // Styling
 const sectionStyling = {
     paddingTop: '8rem',
-    paddingBottom: '2.5rem',
+    paddingBottom: '5.5rem',
     backgroundPosition: 'left',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',

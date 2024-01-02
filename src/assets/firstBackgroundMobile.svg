@@ -2,5 +2,5 @@
 <svg id="visual" viewBox="0 0 540 960" width="540" height="960" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M 0 178.259 L 540 267.117 L 540 0 L 0 0 L 0 178.259 Z" fill="#43334b"/>
   <path d="M 0 413.573 L 540 472.275 L 540 265.661 L 0 166.717 L 0 413.573 Z" fill="#503d5a"/>
-  <path d="M 0 975 L 540 975 L 540 468.413 L 0 393.356 L 0 975 Z" fill="#5e4869"/>
+  <path d="M 0 975 L 540 975 L 540 468.413 L 0 393.356 L 0 975 Z" style="fill: rgb(107, 82, 120);"/>
 </svg>

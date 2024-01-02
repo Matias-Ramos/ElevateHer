@@ -14,25 +14,25 @@ import Col from 'react-bootstrap/Col';
 const Testimonies = () => {
   return (
     <section id="testimonies">
-        <Carousel indicators={false} id="carouselTestim" interval={null}>
-          {testimonies.map((testimony, i) => (
-            <Carousel.Item key={i} interval={7000}>
-              <Container className='gradient'>
-                    <Row>
-                        <Col className='testimonyCol' sm={12} md={6}>
-                            <Text testimony={testimony} />
-                        </Col>
-                        <Col className='testimonyCol' sm={12} md={6}>
-                          <Image
-                            src={testimony.img}
-                            alt={`Imagen antes y despues #${i}`}
-                          />
-                        </Col>
-                    </Row>
-              </Container>
-            </Carousel.Item>
-          ))}
-        </Carousel>
+      <Carousel indicators={false} id="carouselTestim" interval={null}>
+        {testimonies.map((testimony, i) => (
+          <Carousel.Item key={i} interval={7000}>
+            <Container className='gradient'>
+              <Row>
+                <Col className='testimonyCol' sm={12} md={6}>
+                  <Text testimony={testimony} />
+                </Col>
+                <Col className='testimonyCol' sm={12} md={6}>
+                  <Image
+                    src={testimony.img}
+                    alt={`Imagen antes y despues #${i}`}
+                  />
+                </Col>
+              </Row>
+            </Container>
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </section>
   )
 }

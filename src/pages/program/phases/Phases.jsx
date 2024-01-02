@@ -9,7 +9,7 @@ import Picture from './Picture';
 // Styling
 const containerStyling = "d-flex flex-column flex-lg-row phasesContainer"
 const boxStyling = { width: '100%', height: '100%', paddingTop: "8rem"}
-const sectionStyling = { position: "relative", backgroundColor: "#5e4869"}
+const sectionStyling = { position: "relative", backgroundColor: "#6B5278"}
 const logoCtStyling = { position: "absolute", display: "flex", justifyContent: "center"}
 
 

@@ -1,6 +1,8 @@
+@import "../../../color_vars.scss";
+
 #phasesSection{
     .phasesContainer{
-        background-color: #43334b;
+        background-color: $purple-darker;
         clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
         color: white;
     }

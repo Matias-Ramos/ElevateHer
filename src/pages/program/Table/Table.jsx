@@ -15,7 +15,7 @@ import { StyledTableCell, StyledTableRow } from './StyledTable';
 import rows from './tableData';
 // Styling
 const sectionStyling = {
-    background: 'linear-gradient(180deg, rgba(94, 72, 105, 1) 0%, rgba(216, 198, 144, 1) 100%)',
+    background: 'linear-gradient(180deg, rgba(107, 82, 120, 1) 0%, rgba(216, 198, 144, 1) 100%)',
     paddingBottom: '7rem',
 };
 

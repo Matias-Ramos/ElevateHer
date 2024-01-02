@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg id="visual" viewBox="0 0 960 540" width="960" height="540" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 0.227 0 L 423.033 540 L 893.809 540 L 893.809 0 L 0.227 0 Z" fill="#5e4869" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000007, 0.000023)"/>
+  <path d="M 0.227 0 L 423.033 540 L 893.809 540 L 893.809 0 L 0.227 0 Z" style="transform-box: fill-box; transform-origin: 50% 50%; fill: rgb(107, 82, 120);" transform="matrix(-1, 0, 0, -1, 0.000007, 0.000023)"/>
   <path d="M 470.008 0 L 862.824 540 L 959.774 540 L 536.972 0 L 470.008 0 Z" fill="#503d5a" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000049, 0.000023)"/>
   <path d="M 565.959 0 L 565.959 540 L 959.774 540 L 565.959 0 Z" fill="#43334b" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000056, 0.000023)"/>
 </svg>
