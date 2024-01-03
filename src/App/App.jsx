@@ -33,7 +33,9 @@ const App = () => (
           <Benefits />
           <Testimonies />
           <Faq />
-          <CTA_Section text={CTAtext2}/>
+          <div id="lastCat">
+            <CTA_Section text={CTAtext2}/>
+          </div>
         </main>
         <Footer />
       </ThemeProvider>
