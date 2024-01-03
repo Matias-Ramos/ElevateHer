@@ -13,7 +13,15 @@ const ColorButton = styled(Button)(({ theme }) => ({
 }));
 
 export default function ScheduleBtn() {
+  const handleClick = () => {
+    window.open('https://eathink.org/calendar', '_blank');
+  };
   return (
-      <ColorButton variant="contained">Agendar cita</ColorButton>
+      <ColorButton
+        variant="contained"
+        onClick={handleClick}
+      >
+        Agendar cita
+      </ColorButton>
   );
 }
