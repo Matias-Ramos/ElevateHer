@@ -3,14 +3,20 @@ import Card from 'react-bootstrap/Card';
 import { IoIosArrowDown } from "react-icons/io";
 import CustomToggle from './CustomToggle';
 import FaqData from './FaqData';
+import { IconContext } from "react-icons";
+// Styling
+const questionStyling = {display:"block", width: "100%", marginLeft: "25px"}
 
 const CardMapper = () => (
     <>
         { FaqData.map(( faqItem ) => (
-            <Card key={faqItem.id} className='mb-2'>
+            <Card key={faqItem.id} className='mb-3'>
                 <Card.Header className='p-0'>
                     <CustomToggle eventKey={faqItem.id}>
-                        {faqItem.question}
+                        <IconContext.Provider value={{ size: "1.5rem"}}>
+                            {faqItem.icon}
+                        </IconContext.Provider>
+                        <span style={questionStyling}>{faqItem.question}</span>
                         <IoIosArrowDown />
                     </CustomToggle>
                 </Card.Header>

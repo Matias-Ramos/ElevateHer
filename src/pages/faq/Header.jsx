@@ -1,6 +1,6 @@
 import IconInCircle from '../../components/IconInCircle';
 import { PiSealQuestionFill } from "react-icons/pi";
-const h2Styling = 'ms-2 d-inline-block'
+const h2Styling = 'd-inline-block ms-2 mb-0'
 
 const Header = () => (
     <>

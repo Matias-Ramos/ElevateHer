@@ -21,18 +21,20 @@ const App = () => (
   <>
     <BrowserRouter>
       <ThemeProvider theme={THEME}>
-        <div id="firstBackground">
-          <Introduction />
-          <CTA_Section text={CTAtext1} />
-          <BigPicture />
-        </div>
-        <Phases />
-        <Table />
-        <Warranty />
-        <Benefits />
-        <Testimonies />
-        <Faq />
-        <CTA_Section text={CTAtext2} />
+        <main>
+          <div id="firstBackground">
+            <Introduction />
+            <CTA_Section text={CTAtext1} />
+            <BigPicture />
+          </div>
+          <Phases />
+          <Table />
+          <Warranty />
+          <Benefits />
+          <Testimonies />
+          <Faq />
+          <CTA_Section text={CTAtext2}/>
+        </main>
         <Footer />
       </ThemeProvider>
     </BrowserRouter>
