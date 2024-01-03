@@ -6,8 +6,16 @@ footer{
     ol li{
         list-style-type: none;
         a{
+            display: block;
             color: inherit;
             text-decoration: none;
         }
+    }
+}
+
+footer a{
+    color:white;
+    &:hover{
+            color:#adb5bd;
     }
 }
