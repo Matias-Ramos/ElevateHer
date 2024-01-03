@@ -9,6 +9,7 @@ import Table from '../pages/program/table/Table.jsx'
 import Warranty from "../pages/program/warranty/Warranty.jsx"
 import Benefits from "../pages/benefits/Benefits.jsx"
 import Testimonies from "../pages/testimonies/Testimonies.jsx"
+import Signature from "../pages/signature/Signature.jsx"
 // Mui styling
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 // Navigation
@@ -38,7 +39,9 @@ const App = () => (
           </div>
         </main>
         <Footer />
+        <Signature />
       </ThemeProvider>
+      
     </BrowserRouter>
   </>
 )

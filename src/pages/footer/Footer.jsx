@@ -7,7 +7,7 @@ import SocialNetworks from './SocialNetworks';
 import Links from './Links';
 
 const Footer = () => (
-    <footer className='py-4'>
+    <footer>
         <Container>
             <Row>
                 <Col>

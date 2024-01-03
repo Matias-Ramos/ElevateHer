@@ -5,7 +5,7 @@ const sections = [
     { id: 'presentation', label: 'Video de EmpowerHer' },
     { id: 'aboutTheProgram', label: 'Acerca del programa' },
     { id: 'warranty', label: 'Garantía condicional' },
-    { id: 'target', label: 'Target del servicio' },
+    { id: 'benefits', label: 'Beneficios' },
     { id: 'testimonies', label: 'Testimonios' },
     { id: 'CAT', label: 'Agendar una cita' },
 ];
