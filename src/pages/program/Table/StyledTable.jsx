@@ -2,16 +2,19 @@ import { styled } from '@mui/material/styles';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 
-const StyledTableCell = styled(TableCell)(({ theme }) => ({
+const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
-        backgroundColor: theme.palette.grey[900],
-        color: theme.palette.common.white,
+        backgroundColor: "#43334b",
+        color: "white",
     },
 }));
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
+const StyledTableRow = styled(TableRow)(() => ({
     '&:nth-of-type(odd)': {
-        backgroundColor: theme.palette.action.hover,
+        backgroundColor: "#CDC1E7",
+    },
+    '&:nth-of-type(even)': {
+        backgroundColor: "#ebe0ff",
     },
     // hide last border
     '&:last-child td, &:last-child th': {
