@@ -27,10 +27,10 @@ const socialMediaLinks = [
   },
 ];
 
-const iconsStyling = { height: '100%', width: 'auto', marginRight: '0.5rem' };
+const iconsStyling = { height: '100%', width: 'auto', marginRight: '0.7rem' };
 const containerStyling = { height: '2rem', display:'flex' }
 const SocialNetworks = () => (
-  <div style={containerStyling}>
+  <div id="socialNetworks" style={containerStyling}>
     {socialMediaLinks.map((socialMedia, index) => (
         <a
           key={index}

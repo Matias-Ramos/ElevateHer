@@ -24,7 +24,7 @@ const Benefits = () => {
         <section id="benefits" style={sectionStyling}>
             <Container>
                 <Row className={rowStyling}>
-                    <Col lg={7} xl={5}>
+                    <Col lg={12} xl={11}>
                         <List />
                     </Col>
                     <Col className={secondColStyling} lg={5}>

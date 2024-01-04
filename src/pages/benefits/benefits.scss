@@ -1,5 +1,23 @@
-#benefits .callToAction .row .col:first-child{
-    text-shadow: none;
+#benefits {
+    .callToAction .row .col:first-child{
+        text-shadow: none;
+    }
+    .customBullets {
+        list-style-type: none;
+        padding-left: 0;
+        li {
+            position: relative;
+            padding-left: 1.3em;
+            margin-bottom: 10px;
+            &::before {
+                content: '\2023'; 
+                color: #6B5278; 
+                font-size: 1.5em;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }    
 }
 @media only screen and (max-width: 576px) {
     #benefits{
@@ -11,3 +29,5 @@
         background-image: url("./assets/benefitsBlobBckgDesktop.svg");
     }
 }
+
+
