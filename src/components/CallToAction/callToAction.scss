@@ -1,24 +1,33 @@
-.callToAction .row{
+.callToAction .row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .col:first-child{
+
+    .ctaCol:first-child {
         text-align: center;
         margin-bottom: 1rem;
-        text-shadow: 2px 2px 2px rgba(76,42,42,0.7);
+        text-shadow: 2px 2px 2px rgba(76, 42, 42, 0.7);
     }
-    .col:last-child{
+
+    .ctaCol:last-child {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 10px;
     }
 }
 
-// Tablet
-@media only screen and (min-width: 425px) and (max-width: 768px){
-    .callToAction .row{
+@media only screen and (max-width: 520px) {
+    .callToAction .ctaCol:last-child {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .callToAction .row {
         flex-direction: row;
-        .col:last-child{
+
+        .ctaCol:last-child {
             align-items: start;
         }
     }

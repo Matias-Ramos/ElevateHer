@@ -27,7 +27,7 @@ const Benefits = () => {
                     <Col lg={12} xl={11}>
                         <List />
                     </Col>
-                    <Col className={secondColStyling} lg={5}>
+                    <Col className={secondColStyling} md={12} lg={8}>
                         <CTA_Container text={sellingSpeech} />
                     </Col>
                 </Row>

@@ -4,7 +4,7 @@ const List = () => (
     <>
         <h2>Beneficios:</h2>
         <Row style={{alignItems:"center"}}>
-           <Col>
+           <Col xs={11} md={6}>
                <div className="benefit-item-list">
                   <ul className="customBullets">
                       <li><b>Programa personalizado</b>:<br />Adaptado a tu estilo de vida para que alcances tus metas de la manera mas directa posible.</li><br />
@@ -14,7 +14,7 @@ const List = () => (
                   </ul>
                </div>
            </Col>
-           <Col>
+           <Col xs={11} md={6}>
                <div className="benefit-item-list">
                   <ul className="customBullets">
                       <li><b>Recursos exclusivos</b>:<br /> Acceso indefinido a herramientas y materiales.</li><br />
