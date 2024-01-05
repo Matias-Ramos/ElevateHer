@@ -7,7 +7,10 @@ import Header from './Header';
 const h2rowStyling = 'd-flex justify-content-center'
 const h2containerStyling = 'd-flex align-items-end justify-content-between mb-4';
 const sectionStyling = {
-    background:"linear-gradient(180deg, rgba(105, 80, 117, 1) 0%, rgba(152, 125, 166, 1) 53%)", 
+    backgroundImage:"url('/src/assets/benefitsBlobBckgDesktop4.svg')", 
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover", 
     color: "white",
     borderTop: "1px solid #5e4869"
 }
