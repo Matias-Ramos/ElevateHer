@@ -10,11 +10,12 @@ const StyledTableCell = styled(TableCell)(() => ({
 }));
 
 const StyledTableRow = styled(TableRow)(() => ({
+    
     '&:nth-of-type(odd)': {
-        backgroundColor: "#CDC1E7",
+        backgroundColor: "#C0B0E5",
     },
     '&:nth-of-type(even)': {
-        backgroundColor: "#ebe0ff",
+        backgroundColor: "#D5C6E5",
     },
     // hide last border
     '&:last-child td, &:last-child th': {
