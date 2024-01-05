@@ -1,8 +1,9 @@
 // Components
 import { IconContext } from "react-icons";
 // Styling
+
 const containerStyling = {
-    background: "radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 20%, rgba(160, 160, 160, 1) 100%)",
+    backgroundImage: "linear-gradient(144deg, rgb(255, 227, 171), rgb(153, 120, 71) 80%, rgb(255, 227, 171))",
     boxShadow: "rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px",
     height: "4rem",
     width: "4rem",

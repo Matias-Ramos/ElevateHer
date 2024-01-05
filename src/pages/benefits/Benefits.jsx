@@ -5,6 +5,9 @@ import Row from 'react-bootstrap/Row';
 // Components
 import CTA_Container from '../../components/CallToAction/CTA_Container';
 import List from './List';
+import Header from './Header';
+
+
 // Styling
 const rowStyling = 'flex-column flex-lg-row justify-content-lg-evenly'
 const secondColStyling = 'd-flex align-items-center'
@@ -25,6 +28,7 @@ const Benefits = () => {
             <Container>
                 <Row className={rowStyling}>
                     <Col lg={12} xl={11}>
+                        <Header />
                         <List />
                     </Col>
                     <Col className={secondColStyling} md={12} lg={8}>

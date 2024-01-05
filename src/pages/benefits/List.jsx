@@ -2,7 +2,6 @@ import { Row, Col } from "react-bootstrap"
 
 const List = () => (
     <>
-        <h2>Beneficios:</h2>
         <Row style={{alignItems:"center"}}>
            <Col xs={11} md={6}>
                <div className="benefit-item-list">
