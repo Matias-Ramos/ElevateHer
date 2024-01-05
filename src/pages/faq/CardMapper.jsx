@@ -6,7 +6,7 @@ import FaqData from './FaqData';
 import { IconContext } from "react-icons";
 // Styling
 const questionStyling = { display:"block", width: "100%", marginLeft: "25px" }
-const cardStyling = { color:"#252422", backgroundColor:"rgba(0,0,0,0)" }
+const cardStyling = { color:"white", backgroundColor:"rgba(94, 72, 105,0.5)", textShadow: "2px 2px 4px #281e2d" }
 
 const CardMapper = () => (
     <>

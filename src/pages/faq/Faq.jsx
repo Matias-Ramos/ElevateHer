@@ -7,8 +7,9 @@ import Header from './Header';
 const h2rowStyling = 'd-flex justify-content-center'
 const h2containerStyling = 'd-flex align-items-end justify-content-between mb-4';
 const sectionStyling = {
-    background:"linear-gradient(0deg, rgba(255, 238, 186, 1) 27%, rgba(223, 198, 125, 1) 100%)", 
-    color: "252422"
+    background:"linear-gradient(180deg, rgba(105, 80, 117, 1) 0%, rgba(152, 125, 166, 1) 53%)", 
+    color: "white",
+    borderTop: "1px solid #5e4869"
 }
 
 const Faq = () => (
