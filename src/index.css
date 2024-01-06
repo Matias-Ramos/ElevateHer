@@ -16,3 +16,40 @@ section{
   padding-top:4rem;
   padding-bottom:4rem;
 }
+
+@font-face{
+  font-family: "isabel";
+  src: url('assets/fonts/isabel-bold.otf') format('otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face{
+  font-family: "isabel";
+  src: url('./assets/fonts/isabel-regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: "isabel";
+  src: url('./assets/fonts/isabel-light.otf') format('otf');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/* !!!!!!!!!!! */
+/* !!!!!!!!!!! */
+/* !!!!!!!!!!! */
+/* Temporary */
+#presentation, #aboutTheProgram{
+  font-family: "isabel";
+  font-weight: normal;
+  h1{
+    font-weight: bold;
+  }
+}
+
+h2{
+  font-size: calc(1.725rem + .9vw);
+  font-family: "isabel";
+  font-weight: bold;  
+}
