@@ -20,19 +20,19 @@ section{
 
 @font-face{
   font-family: "isabel";
-  src: url('/src/assets/fonts/isabel-bold.woff2') format('woff2');
+  src: url('/src/assets/fonts/isabel-bold.OTF') format('OTF');
   font-weight: bold;
   font-style: normal;
 }
 @font-face{
   font-family: "isabel";
-  src: url('/src/assets/fonts/isabel-regular.woff2') format('woff2');
+  src: url('/src/assets/fonts/isabel-regular.OTF') format('OTF');
   font-weight: normal;
   font-style: normal;
 }
 @font-face{
   font-family: "isabel";
-  src: url('/src/assets/fonts/isabel-light.woff2') format('woff2');
+  src: url('/src/assets/fonts/isabel-light.OTF') format('OTF');
   font-weight: lighter;
   font-style: normal;
 }
@@ -42,9 +42,8 @@ section{
 /* !!!!!!!!!!! */
 /* Temporary */
 #presentation, #aboutTheProgram{
-  font-family: "isabel";
-  font-weight: normal;
   h1{
+    font-family: "isabel";
     font-weight: bold;
   }
 }
