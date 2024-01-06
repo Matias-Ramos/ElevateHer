@@ -1,3 +1,4 @@
+
 :root {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,19 +20,19 @@ section{
 
 @font-face{
   font-family: "isabel";
-  src: url('assets/fonts/isabel-bold.otf') format('otf');
+  src: url('/src/assets/fonts/isabel-bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 @font-face{
   font-family: "isabel";
-  src: url('./assets/fonts/isabel-regular.otf') format('otf');
+  src: url('/src/assets/fonts/isabel-regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face{
   font-family: "isabel";
-  src: url('./assets/fonts/isabel-light.otf') format('otf');
+  src: url('/src/assets/fonts/isabel-light.woff2') format('woff2');
   font-weight: lighter;
   font-style: normal;
 }
