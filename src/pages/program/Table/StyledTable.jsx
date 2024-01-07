@@ -10,7 +10,7 @@ const StyledTableCell = styled(TableCell)(() => ({
 }));
 
 const StyledTableRow = styled(TableRow)(() => ({
-    
+        
     '&:nth-of-type(odd)': {
         backgroundColor: "#C0B0E5",
     },

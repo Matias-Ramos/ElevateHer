@@ -9,12 +9,14 @@ const h2Styling = {
 }
 
 const Header = () => (
-    <>
+    <div className='d-flex align-items-center gap-3'>
         <h2 style={h2Styling}>Preguntas frecuentes</h2>
-        <IconInCircle>
-            <PiSealQuestionFill />
-        </IconInCircle>
-    </>
+        <div id="respectWidth">
+            <IconInCircle>
+                <PiSealQuestionFill />
+            </IconInCircle>
+        </div>
+    </div>
 )
 
 export default Header

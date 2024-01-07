@@ -1,9 +1,6 @@
 import IconInCircle from '../../components/IconInCircle';
 import { MdSelfImprovement } from "react-icons/md";
 
-
-
-
 const Header = () => {
     return (
         <div className='d-flex align-items-center gap-3 mb-4'>

@@ -39,8 +39,8 @@ const Table = () => {
                                 </TableHead>
                                 <TableBody>
                                     {rows.map((row) => (
-                                        <StyledTableRow key={row.name}>
-                                            <StyledTableCell component="th" scope="row">
+                                        <StyledTableRow key={row.name} >
+                                            <StyledTableCell component="th" scope="row" style={{fontWeight: 500}}>
                                                 {row.name}
                                             </StyledTableCell>
                                             <StyledTableCell align="right">{row.price}</StyledTableCell>

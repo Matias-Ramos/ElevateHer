@@ -1,14 +1,12 @@
 // Icon
 import IconInCircle from "../../../components/IconInCircle"
 import { HiCheckBadge } from "react-icons/hi2";
-import { IconContext } from "react-icons";
 // BTS
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 // Styling
 const firstColStyling = "d-flex align-items-center mb-3"
-const iconStyling = { color: "black", size: "75%" }
 const rowStyling = "d-lg-flex justify-content-center"
 const headerStyling = "ms-3 mb-0";
 const headerStyling2 = {
@@ -20,27 +18,27 @@ const warrantyStyling = {
     zIndex: 2,
     backgroundColor: '#6B5278',
     color: "white",
-    boxShadow:"rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px -18px 36px -18px inset, rgba(50, 50, 93, 0.25) 0px 0px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px -18px 36px -18px inset",
+    boxShadow: "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px -18px 36px -18px inset, rgba(50, 50, 93, 0.25) 0px 0px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px -18px 36px -18px inset",
     textShadow: "2px 2px 4px #281e2d",
     backgroundImage: textureURL,
-    
+
 };
 
-  
+
 const Warranty = () => (
     <section id="warranty" style={warrantyStyling}>
         <Container>
             <Row className={rowStyling}>
                 <Col xs={12} lg={11} className={firstColStyling}>
-                    <IconInCircle>
-                        <IconContext.Provider value={iconStyling}>
-                            <HiCheckBadge color="#43334b"/>
-                        </IconContext.Provider>
-                    </IconInCircle>
+                    <div className='d-flex align-items-center gap-3'>
+                        <IconInCircle>
+                            <HiCheckBadge color="#43334b" />
+                        </IconInCircle>
+                    </div>
                     <h2 className={headerStyling} style={headerStyling2}>Garantía condicional</h2>
                 </Col>
                 <Col lg={11}>
-                    <p style={{lineHeight: "2.3rem"}} >Si al final de los tres meses no has visto ningún cambio, puedes agendar una llamada y revisaré con mi equipo si eres elegible para el <b>reembolso</b>. Esto dependerá que hayas asistido a todas nuestras reuniones virtuales, chequeos semanales, que demuestres desde la aplicación que cumpliste con el 95% de los entrenamientos, llevaste el registro de alimentación y cumpliste con los hábitos que te agendé en el cronograma al 100%.</p>
+                    <p style={{ lineHeight: "2.3rem" }} >Si al final de los tres meses no has visto ningún cambio, puedes agendar una llamada y revisaré con mi equipo si eres elegible para el <b>reembolso</b>. Esto dependerá que hayas asistido a todas nuestras reuniones virtuales, chequeos semanales, que demuestres desde la aplicación que cumpliste con el 95% de los entrenamientos, llevaste el registro de alimentación y cumpliste con los hábitos que te agendé en el cronograma al 100%.</p>
                 </Col>
             </Row>
         </Container>
