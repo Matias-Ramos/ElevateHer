@@ -9,7 +9,7 @@ const h2Styling = {
 }
 
 const Header = () => (
-    <div className='d-flex align-items-center gap-3'>
+    <div className='d-flex w-100 align-items-center justify-content-between gap-3'>
         <h2 style={h2Styling}>Preguntas frecuentes</h2>
         <div id="respectWidth">
             <IconInCircle>
