@@ -48,7 +48,7 @@ const App = () => (
 
 const THEME = createTheme({
   typography: {
-   "fontFamily": `"Nunito Sans", sans-serif`,
+   "fontFamily": `"Quicksand", sans-serif`,
    "fontSize": 17,
    "lineHeight": 1.7,
   }

@@ -74,7 +74,9 @@ $texture-url: "data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 
     .gradient {
         display: flex;
     }
-    
+    #testimonies img{
+        max-width: 100%;
+    }
     $carousel-fixed-height : 25rem;
 
     .carousel-item {
@@ -101,5 +103,6 @@ $texture-url: "data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 
         .testimonyCol:first-child span{
             padding-left: 15px;
         }
+
     }
 }

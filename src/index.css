@@ -1,3 +1,15 @@
+@font-face{
+  font-family: 'Isabel';
+  src: url('/src/assets/fonts/isabel-bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Isabel';
+  src: url('/src/assets/fonts/isabel-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   text-rendering: optimizeLegibility;
@@ -5,51 +17,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body{
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.15rem;
   line-height: 1.7;
   background-color: #6B5278;
 }
-h2,h3{
-  font-family: 'Bitter', serif;
+h1{
+  font-family: 'Isabel';
+  font-weight: bold;
+}
+h2, h3{
+  font-size: calc(1.725rem + .9vw);
+  font-family: 'Isabel';
+  font-weight: normal;  
 }
 section{
   padding-top:4rem;
   padding-bottom:4rem;
-}
-
-@font-face{
-  font-family: "isabel";
-  src: url('/src/assets/fonts/isabel-bold.OTF') format('OTF');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face{
-  font-family: "isabel";
-  src: url('/src/assets/fonts/isabel-regular.OTF') format('OTF');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face{
-  font-family: "isabel";
-  src: url('/src/assets/fonts/isabel-light.OTF') format('OTF');
-  font-weight: lighter;
-  font-style: normal;
-}
-
-/* !!!!!!!!!!! */
-/* !!!!!!!!!!! */
-/* !!!!!!!!!!! */
-/* Temporary */
-#presentation, #aboutTheProgram{
-  h1{
-    font-family: "isabel";
-    font-weight: bold;
-  }
-}
-
-h2{
-  font-size: calc(1.725rem + .9vw);
-  font-family: "isabel";
-  font-weight: bold;  
 }

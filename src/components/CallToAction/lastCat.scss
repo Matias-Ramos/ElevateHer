@@ -14,9 +14,12 @@ main #lastCat{
         border-right: 0;
         border-left: 0;
         font-size: 1.3rem;
-        .row .ctaCol:first-child{
-            text-shadow: rgba(0, 0, 0, 1) 3px 3px 3px;
-            color:white;
+        .row {
+            justify-content: center;
+            .ctaCol:first-child{
+                text-shadow: rgba(0, 0, 0, 1) 3px 3px 3px;
+                color:white;
+            }
         }
     }
 }
