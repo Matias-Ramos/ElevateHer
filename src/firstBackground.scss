@@ -1,6 +1,6 @@
 #firstBackground {
     color: white;
-    background-image: url("./assets/firstBackgroundDesktop.svg");
+    background-image: url("./assets/backgrounds/introductoryBckgDesktop.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -19,6 +19,6 @@
 
 @media only screen and (max-width: 991px) {
     #firstBackground {
-        background-image: url("./assets/firstBackgroundMobile.svg");
+        background-image: url("./assets/backgrounds/introductoryBckgMobile.svg");
     }
 }

@@ -1,7 +1,7 @@
 // Components
 import Image from 'react-bootstrap/Image';
 // Assets
-import AnaImg from '../../../assets/ana_pic_1.jpg';
+import AnaImg from '../../../assets/backgrounds/ana_pic_1.jpg';
 const picStyling = {
     objectFit: 'cover',
     objectPosition: '100% 40%',

@@ -1,10 +1,36 @@
 @import '../../color_vars.scss';
 #signatureSection {
     background-color: $purple-footer;
-    color: #a99985;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
-    a {
-        color: #a99985;
+
+    .row{
+        flex-direction: column;
+        .col{
+            text-align: end;
+        }
+    }
+    #externalCredits{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        ul{
+            
+            padding: 0;
+            display: inline-block;
+            margin-top: auto;
+            margin-bottom: auto;
+
+            
+            li{
+                list-style-type: none;
+                margin: 0;
+                display: inline-block;
+            }
+        }
     }
 }
 
@@ -13,8 +39,11 @@
 @media only screen and (min-width: 992px) {
     #signatureSection {
         font-size: .8rem;
-        text-align: right;
-        padding-right: 1rem;
+        padding: 1rem 1rem 2px 1rem;
+        color: #a99985;
+        a { 
+            color: #a99985;
+        }
     }
 }
 
@@ -23,7 +52,20 @@
 @media only screen and (max-width: 992px) {
     #signatureSection {
         font-size: .9rem;
-        text-align: center;
-        border-bottom: 1px solid #4b4e58;
+        text-align: end;
+        padding-top: 2rem;
+        .container-fluid{
+            background-color: $purple-signature;
+            .row{
+                $font-color: #857B8A;
+                color: $font-color;
+                a { 
+                    color: $font-color;
+                }
+                #externalCredits{
+                    justify-content: flex-end;
+                }
+            }
+        }
     }
 }

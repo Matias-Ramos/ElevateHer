@@ -1,8 +1,8 @@
-import img1 from '../../assets/BEFORE AND AFTER/1/1.jpg';
-import img2 from '../../assets/BEFORE AND AFTER/2/2.jpg';
-import img3 from '../../assets/BEFORE AND AFTER/3/3.jpg';
-import img4 from '../../assets/BEFORE AND AFTER/4/4.jpg';
-import img5 from '../../assets/BEFORE AND AFTER/5/5.jpg';
+import img1 from '../../assets/before_and_after/1/1.jpg';
+import img2 from '../../assets/before_and_after/2/2.jpg';
+import img3 from '../../assets/before_and_after/3/3.jpg';
+import img4 from '../../assets/before_and_after/4/4.jpg';
+import img5 from '../../assets/before_and_after/5/5.jpg';
 const images = [img1, img2, img3, img4, img5];
 
 

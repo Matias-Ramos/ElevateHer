@@ -1,15 +1,23 @@
+// BTS
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+// Components
+import ExternalCredits from "./ExternalCredits";
+import DevCredits from './DevCredits';
+
 const Signature = () => (
   <div id="signatureSection">
-    <i>
-      Developer:{" "}
-      <a
-        href="https://www.linkedin.com/in/matias-ramos-computacion/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Matias Ramos
-      </a>
-    </i>
+    <Container fluid>
+      <Row>
+        <Col>
+          <DevCredits />
+        </Col>
+        <Col>
+          <ExternalCredits />
+        </Col>
+      </Row>
+    </Container>    
   </div>
 );
 

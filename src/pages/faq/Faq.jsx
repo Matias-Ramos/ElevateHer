@@ -7,7 +7,7 @@ import Header from './Header';
 const h2rowStyling = 'd-flex justify-content-center'
 const h2containerStyling = 'd-flex align-items-end justify-content-between mb-4';
 const sectionStyling = {
-    backgroundImage:"url('/src/assets/benefitsBlobBckgDesktop4.svg')", 
+    backgroundImage:"url('/src/assets/backgrounds/faqBckgDesktop.svg')", 
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover", 

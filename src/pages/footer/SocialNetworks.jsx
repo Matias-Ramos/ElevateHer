@@ -7,11 +7,11 @@ import { SiInstagram } from "react-icons/si";
 const socialMediaLinks = [
   {
     icon: <SiInstagram />,
-    link: 'https://instagram.com/anarestrepofit?igshid=YmMyMTA2M2Y=',
+    link: 'https://instagram.com/anarestrepofit',
   },
   {
     icon: <FaTiktok />,
-    link: 'https://www.tiktok.com/@anarestrepofit?_t=8ijdBceZNJe&_r=1',
+    link: 'https://www.tiktok.com/@anarestrepofit',
   },
   {
     icon: <FaYoutube />,
