@@ -2,30 +2,26 @@ import img1 from '../../assets/before_and_after/1/1.jpg';
 import img2 from '../../assets/before_and_after/2/2.jpg';
 import img3 from '../../assets/before_and_after/3/3.jpg';
 import img4 from '../../assets/before_and_after/4/4.jpg';
-import img5 from '../../assets/before_and_after/5/5.jpg';
-const images = [img1, img2, img3, img4, img5];
+const images = [img1, img2, img3, img4];
 
 
 const writtenTestimonies = [
   {
-    personName: "Juan Perez",
+    personName: "Juanita Perez",
     wrTestimony: '"¡Increíble transformación! Gracias a los programas de fitness de ElevateHer, logré superar mis metas de acondicionamiento físico en tiempo récord. ¡Una experiencia motivadora y efectiva!"'
   },
   {
-    personName: "Milagros Sanchez",
-    wrTestimony: '"He probado muchos entrenamientos, pero ninguno como los de EmpowerHer. Los entrenadores expertos y las clases personalizadas hicieron que cada sesión fuera desafiante y divertida. ¡Altamente recomendado!"',
+    personName: "Mariana Vélez",
+    wrTestimony: '"He probado muchos entrenamientos, pero ninguno como los de EmpowerHer. Los entrenamientos que me envío Ana fueron retadores pero sacaron mi major version. Gracias por tomarse el tiempo cada semana en los chequeos y mantenerme responsible de mis acciones. Hizo que cada session fuera desafiante y divertida. ¡Altamente recomendado!"',
   },
   {
-    personName: "Micaela Espíndola",
-    wrTestimony: '"Me uní a EmpowerHer buscando variedad y resultados. No solo encontré una gran variedad de clases, sino que también logré mejorar mi fuerza y resistencia. ¡Un ambiente amigable y profesional!"',
+    personName: "Ana Restrepo",
+    wrTestimony: `"Hace 4 años, tenía una autoestima baja, me sentía deprimida y tenía dificultades con mi alimentación y entrenamiento. El problema era que estaba tratando de todo para mejorar. Quería lucir más atlética y en la mejor forma posible, pero simplemente no parecía poder llegar allí, incluso si intentaba restringir mi dieta y entrenar lo más duro posible. Sabía que necesitaba cambiar algo porque, mentalmente, no estaba en el lugar correcto para alcanzar mis metas. 
+    Avancemos hasta hoy y ahora me siento más empoderada de mi salud, tengo una relación saludable con la comida y físicamente estoy en el mejor momento de mi vida. Pero, lo más importante, tengo una comprensión completa de lo que significa tener mi bienestar físico, social y mental en equilibrio: Aqui estoy para ayudarte"`,
   },
   {
-    personName: "Sofía Lezama",
-    wrTestimony: '"¡Fantástico! EmpowerHer no solo me ayudó a alcanzar mis objetivos de pérdida de peso, sino que también me proporcionó una comunidad de apoyo. Entrenadores motivadores y resultados tangibles, ¡simplemente lo mejor!"',
-  },
-  {
-    personName: "Paula Falcone",
-    wrTestimony: '"Los programas de ElevateHer no solo se enfocan en el físico, sino también en el bienestar mental. Las clases de yoga y meditación me ayudaron a encontrar equilibrio en mi vida agitada. ¡Una joya en el mundo del fitness!"',
+    personName: "Juan Diego Restrepo",
+    wrTestimony: '"¡Fantástico! EmpowerHer no solo me ayudó a alcanzar mis objetivos de pérdida de peso, sino que también me proporcionó una comunidad de apoyo. Resultados tangibles, ¡simplemente lo mejor!"',
   }
 ];
 

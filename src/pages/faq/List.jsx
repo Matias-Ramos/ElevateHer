@@ -1,5 +1,6 @@
 const List = () => (
     <ul>
+        <li>Te sientes perdida en el gimnasio</li>
         <li>Tienes dificultades con tu salud digestiva</li>
         <li>No encuentras motivación y te cuesta ser constante</li>
         <li>Estas cansada de volver a empezar nuevas dietas constantemente</li>

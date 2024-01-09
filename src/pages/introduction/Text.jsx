@@ -1,7 +1,7 @@
 const Text = () => (
     <>
-        <h1>EmpowerHer</h1>
-        <p>Revoluciona tu <b className="fst-normal">cuerpo</b>, fortalece tu <b className="fst-normal">mente</b> y sana tu relación con la <b className="fst-normal">comida</b> en tan solo 12 semanas de compromiso y dedicación.</p>
+        <h1>EMPOWERHER</h1>
+        <p>Eleva tu <b className="fst-normal">vida</b>, transforma tu <b className="fst-normal">cuerpo</b>, fortaleve tu <b>mente</b> y aprende a <b className="fst-normal">alimentarte balanceadamente</b> en tan solo 12 semanas.</p>
     </>
 )
 export default Text
