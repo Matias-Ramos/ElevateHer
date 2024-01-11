@@ -5,7 +5,7 @@ import CardMapper from './CardMapper';
 import Header from './Header';
 // Styling
 const h2rowStyling = 'd-flex justify-content-center'
-const h2containerStyling = 'd-flex align-items-end justify-content-between mb-4';
+const h2containerStyling = 'd-flex align-items-end justify-content-between mb-3';
 const sectionStyling = {
     backgroundImage:"url('/src/assets/backgrounds/faqBckgDesktop.svg')", 
     backgroundPosition: "center",

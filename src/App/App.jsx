@@ -40,11 +40,11 @@ const App = () => (
           <Warranty />
           <Benefits />
           <Testimonies />
+          <WhoIsAna />
           <Faq />
           <div id="lastCat">
             <CTA_Section stripeLink={fullPayment} text={CTAtext2}/>
           </div>
-          <WhoIsAna />
           
         </main>
         <Footer />

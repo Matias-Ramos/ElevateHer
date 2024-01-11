@@ -6,9 +6,10 @@
 @use './styles/secondBackground.scss';
 @use './pages/paymentMethods/paymentMethods.scss';
 @use './pages/benefits/benefits.scss';
+@use './styles/chevron.scss';
 @use './pages/testimonies/testimonies.scss';
 @use './pages/testimonies/btsCarouselCustomize.scss';
-@use './pages/signature/signature.scss';
-@use './pages/footer/footer.scss';
+@use './pages/whoIsAna/whoIsAna.scss';
 @use './components/CallToAction/lastCat.scss';
-@use './styles/chevron.scss'
+@use './pages/footer/footer.scss';
+@use './pages/signature/signature.scss';

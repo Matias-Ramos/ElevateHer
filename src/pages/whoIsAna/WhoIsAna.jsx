@@ -1,13 +1,42 @@
+// Assets
+import anaPicture from "../../assets/photos/ana_pic_2.jpg";
+// BTS
+import { Container, Row, Col } from "react-bootstrap";
+import Image from 'react-bootstrap/Image';
+// Components
+import List from "./List";
+import StoryTelling from "./StoryTelling";
+// Styles
+const sectionStyling = {
+  background: "linear-gradient(180deg, rgb(107, 82, 120) 0%, rgb(131, 100, 147) 50%, rgb(152, 125, 166) 100%)",
+  color: "white",
+  textShadow: "rgba(76, 42, 42, 0.7) 2px 2px 2px"
+}
+
+
+
 const WhoIsAna = () => {
   return (
-    <div>
-        <h2>Quien es Ana Restrepo?</h2>
-        <ul>
-            <li>NUTRITION HEALTH COACH con énfasis en Psicología de la alimentación emocional y Salud digestiva con IIN en New York.</li>
-            <li>Certified Personal Trainer and Certified Sports Nutrition Coach con NASM.</li>
-            <li>Más de 5 años de experiencia como Fitness Coach</li>
-        </ul>
-    </div>
+    <section style={sectionStyling} id="whoIsAna">
+      <Container>
+        <Row>
+          <Col xs={12} className="mb-lg-2">
+            <h2 className="mb-3">Quien es Ana Restrepo?</h2>
+            <List />
+          </Col>
+          <Col>
+            <Image
+              src={anaPicture}
+              alt="Fotografía de Ana Restrepo"
+              className="rounded"
+              fluid/>
+          </Col>
+          <Col xs={12} lg={6}>
+            <StoryTelling />
+          </Col>
+        </Row>
+      </Container>
+    </section>
   )
 }
 export default WhoIsAna
