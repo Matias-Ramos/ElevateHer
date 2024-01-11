@@ -6,13 +6,14 @@ import Row from 'react-bootstrap/Row';
 import CTA_Container from '../../components/CallToAction/CTA_Container';
 import List from './List';
 import Header from './Header';
-
-
 // Styling
 const rowStyling = 'flex-column flex-lg-row justify-content-lg-evenly'
 const secondColStyling = 'd-flex align-items-center'
-// Const
+// Others
+import { fullPayment } from '../../App/stripeLinks';
 const sellingSpeech = 'El camino se recorre dando el primer paso'
+
+
 // Styling
 const sectionStyling = {
     paddingTop: '8rem',
@@ -32,7 +33,9 @@ const Benefits = () => {
                         <List />
                     </Col>
                     <Col className={secondColStyling} md={12} lg={8}>
-                        <CTA_Container text={sellingSpeech} />
+                        <CTA_Container
+                            stripeLink={fullPayment}
+                            text={sellingSpeech} />
                     </Col>
                 </Row>
             </Container>

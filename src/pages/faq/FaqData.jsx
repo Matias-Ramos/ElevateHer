@@ -7,7 +7,7 @@ import List from "./List";
 const FaqData = [
     {
       id: '0',
-      question: '¿Cómo saber si soy elegible para la devolución de mi dinero si no estoy satisfecho?',
+      question: '¿Cómo saber si soy elegible para la devolución de mi dinero si no estoy satisfecha?',
       answer: 'Si al final de los tres meses no has visto ningún cambio, puedes agendar una llamada y revisaré con mi equipo de acuerdo a nuestra garantía condicional, si eres elegible para el reembolso. Esto dependerá que hayas asistido a todas nuestras reuniones virtuales, chequeos constantes y demuestres que seguiste el plan de entrenamiento y el plan nutricional al 100%.',
       icon: <GiReceiveMoney />,
     },
@@ -25,7 +25,7 @@ const FaqData = [
     },
     {
       id: '3',
-      question: '¿Cómo se si este programa es para mi?',
+      question: '¿Cómo sé si este programa es para mi?',
       answer: <List/>,
       icon: <FaPersonCircleQuestion />,
     },

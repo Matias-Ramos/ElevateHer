@@ -5,8 +5,8 @@
     #h1column {
         flex-direction: column;
         justify-content: center;
-        h1 {
-            // font-family: 'Inter Tight', sans-serif;
+        p {
+            font-style: italic;
         }
     }
 }
@@ -32,10 +32,7 @@
                 text-align: center;
                 margin-bottom: 2rem;
                 h1{
-                    font-size: 2.8rem;
-                }
-                p{
-                    margin-bottom: 0;
+                    font-size: 2.6rem;
                 }
             }
         }
@@ -60,7 +57,7 @@
                 align-items: flex-start;
 
                 h1 {
-                    font-size: 3.6rem;
+                    font-size: 3.3rem;
                 }
 
                 p {
@@ -81,6 +78,6 @@
 }
 @media only screen and (min-width: 1400px) {
     #presentation .row #h1column h1{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 }

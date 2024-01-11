@@ -14,9 +14,13 @@ import Signature from "../pages/signature/Signature.jsx"
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 // Navigation
 import { BrowserRouter } from 'react-router-dom'
+import WhoIsAna from "../pages/whoIsAna/WhoIsAna.jsx"
 // Props
+import { fullPayment, monthlypayment } from "./stripeLinks.js"
+import PaymentMethods from "../pages/paymentMethods/PaymentMethods.jsx"
 const CTAtext1 = 'Tu mejor versión te espera'
 const CTAtext2 = 'Sé tu propia motivación'
+
 
 const App = () => (
   <>
@@ -25,18 +29,23 @@ const App = () => (
         <main>
           <div id="firstBackground">
             <Introduction />
-            <CTA_Section text={CTAtext1} />
+            <CTA_Section stripeLink={fullPayment} text={CTAtext1} />
             <BigPicture />
           </div>
           <Phases />
-          <Table />
+          <div id="secondBackground">
+            <Table />
+            <PaymentMethods />
+          </div>
           <Warranty />
           <Benefits />
           <Testimonies />
           <Faq />
           <div id="lastCat">
-            <CTA_Section text={CTAtext2}/>
+            <CTA_Section stripeLink={fullPayment} text={CTAtext2}/>
           </div>
+          <WhoIsAna />
+          
         </main>
         <Footer />
         <Signature />

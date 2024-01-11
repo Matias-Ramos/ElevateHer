@@ -7,7 +7,7 @@ import FormattedText from './FormattedText';
 import ScheduleBtn from './ScheduleBtn';
 import BuyBtn from './BuyBtn';
 
-const CTA_Container = ({ text, isCTAsection = false }) => (
+const CTA_Container = ({ stripeLink, text, isCTAsection = false }) => (
     <Container className="callToAction">
         <Row>
             <Col className='ctaCol' xs={12} md={10} lg={12}>
@@ -15,7 +15,7 @@ const CTA_Container = ({ text, isCTAsection = false }) => (
             </Col>
             <Col className='ctaCol' xs={12} md={10} lg={isCTAsection ? 6 : 10}>
                 <ScheduleBtn />
-                <BuyBtn />
+                <BuyBtn stripeLink={stripeLink} />
             </Col>
         </Row>
     </Container>

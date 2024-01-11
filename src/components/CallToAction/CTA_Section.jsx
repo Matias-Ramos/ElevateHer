@@ -1,8 +1,11 @@
 import CTA_Container from "./CTA_Container"
 
-const CTA_Section = ({ text }) => (
+const CTA_Section = ({ text, stripeLink }) => (
     <section className="ctaSection">
-        <CTA_Container text={text} isCTAsection={true} />
+        <CTA_Container
+            stripeLink={stripeLink}
+            text={text}
+            isCTAsection={true} />
     </section>
 )
 
