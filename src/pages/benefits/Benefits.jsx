@@ -10,7 +10,7 @@ import Header from './Header';
 const rowStyling = 'flex-column flex-lg-row justify-content-lg-evenly'
 const secondColStyling = 'd-flex align-items-center'
 // Others
-import { fullPayment } from '../../App/stripeLinks';
+import { stripeFullPayment } from '../../utils/Links';
 const sellingSpeech = 'El camino se recorre dando el primer paso'
 
 
@@ -34,7 +34,7 @@ const Benefits = () => {
                     </Col>
                     <Col className={secondColStyling} md={12} lg={8}>
                         <CTA_Container
-                            stripeLink={fullPayment}
+                            stripeLink={stripeFullPayment}
                             text={sellingSpeech} />
                     </Col>
                 </Row>

@@ -1,5 +1,5 @@
 import { Col } from "react-bootstrap";
-import { fullPayment, monthlypayment } from "../../App/stripeLinks";
+import { stripeFullPayment, stripeMonthlyPayment } from "../../utils/Links";
 import BuyBtn from "../../components/CallToAction/BuyBtn";
 
 const Buttons = () => (
@@ -9,7 +9,7 @@ const Buttons = () => (
                 <div className="innerContainer">
                     <span className="d-block price">$600</span>
                     <span>Abonando en un único pago<br /> con 20% de descuento</span>
-                    <BuyBtn stripeLink={fullPayment} />
+                    <BuyBtn stripeLink={stripeFullPayment} />
                 </div>
             </div>
         </Col>
@@ -18,7 +18,7 @@ const Buttons = () => (
                 <div className="innerContainer">
                     <span className="d-block price">$ 275</span>
                     <span>Abonando mes a mes</span>
-                    <BuyBtn stripeLink={monthlypayment} />
+                    <BuyBtn stripeLink={stripeMonthlyPayment} />
                 </div>
             </div>
         </Col>

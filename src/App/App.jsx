@@ -1,35 +1,19 @@
-// Components
-import CTA_Section from "../components/CallToAction/CTA_Section.jsx"
-import Faq from "../pages/faq/Faq.jsx"
-import Footer from "../pages/footer/Footer.jsx"
-import Introduction from "../pages/introduction/Introduction.jsx"
-import BigPicture from '../pages/program/bigPicture/BigPicture.jsx'
-import Phases from "../pages/program/phases/Phases.jsx"
-import Table from '../pages/program/table/Table.jsx'
-import Warranty from "../pages/program/warranty/Warranty.jsx"
-import Benefits from "../pages/benefits/Benefits.jsx"
-import Testimonies from "../pages/testimonies/Testimonies.jsx"
-import Signature from "../pages/signature/Signature.jsx"
-// Mui styling
-import { createTheme, ThemeProvider } from '@mui/material/styles'
-// Navigation
-import { BrowserRouter } from 'react-router-dom'
-import WhoIsAna from "../pages/whoIsAna/WhoIsAna.jsx"
-// Props
-import { fullPayment, monthlypayment } from "./stripeLinks.js"
-import PaymentMethods from "../pages/paymentMethods/PaymentMethods.jsx"
-const CTAtext1 = 'Tu mejor versión te espera'
-const CTAtext2 = 'Sé tu propia motivación'
+import {
+  CTA_Section, Faq, Footer, Introduction, BigPicture, Phases, Table, PaymentMethods, Warranty, Benefits, Testimonies, WhoIsAna, Signature, ThemeProvider, fontStyles, BrowserRouter, stripeFullPayment, CTAtext1, CTAtext2
+} from './imports';
 
 
 const App = () => (
   <>
     <BrowserRouter>
-      <ThemeProvider theme={THEME}>
+      <ThemeProvider theme={fontStyles}>
         <main>
           <div id="firstBackground">
             <Introduction />
-            <CTA_Section stripeLink={fullPayment} text={CTAtext1} />
+            <CTA_Section
+              stripeLink={stripeFullPayment}
+              text={CTAtext1} 
+            />
             <BigPicture />
           </div>
           <Phases />
@@ -43,23 +27,18 @@ const App = () => (
           <WhoIsAna />
           <Faq />
           <div id="lastCat">
-            <CTA_Section stripeLink={fullPayment} text={CTAtext2}/>
+            <CTA_Section
+              stripeLink={stripeFullPayment}
+              text={CTAtext2}
+            />
           </div>
-          
         </main>
         <Footer />
         <Signature />
       </ThemeProvider>
-      
     </BrowserRouter>
   </>
 )
 
-const THEME = createTheme({
-  typography: {
-   "fontFamily": `"Quicksand", sans-serif`,
-   "fontSize": 17,
-   "lineHeight": 1.7,
-  }
-});
-export default App
+
+export default App;

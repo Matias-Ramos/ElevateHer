@@ -1,29 +1,31 @@
+// Links
+import { socialMediaLinks } from "../../utils/Links";
 // Icons
 import { cloneElement } from "react";
 import { FaSpotify, FaTiktok, FaYoutube } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io";
 import { SiInstagram } from "react-icons/si";
 
-const socialMediaLinks = [
+const socialMediaAnchors = [
   {
     icon: <SiInstagram />,
-    link: 'https://instagram.com/anarestrepofit',
+    link: socialMediaLinks.instagram,
   },
   {
     icon: <FaTiktok />,
-    link: 'https://www.tiktok.com/@anarestrepofit',
+    link: socialMediaLinks.tiktok,
   },
   {
     icon: <FaYoutube />,
-    link: 'https://www.youtube.com/@anarestrepofit',
+    link: socialMediaLinks.youtube,
   },
   {
     icon: <FaSpotify />,
-    link: 'https://open.spotify.com/show/27ZZG6ouX6a8hADG4E8q22?si=9AzS2HO9S7indK1JbAWg8w&dd=1',
+    link: socialMediaLinks.spotify,
   },
   {
     icon: <IoLogoFacebook />,
-    link: 'https://www.facebook.com/share/Gm8d7n7QBi7wSYrB/?mibextid=K35XfP',
+    link: socialMediaLinks.facebook,
   },
 ];
 
@@ -31,7 +33,7 @@ const iconsStyling = { height: '100%', width: 'auto', marginRight: '0.7rem' };
 const containerStyling = { height: '2rem', display:'flex' }
 const SocialNetworks = () => (
   <div id="socialNetworks" style={containerStyling}>
-    {socialMediaLinks.map((socialMedia, index) => (
+    {socialMediaAnchors.map((socialMedia, index) => (
         <a
           key={index}
           href={socialMedia.link}
