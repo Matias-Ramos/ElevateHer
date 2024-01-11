@@ -1,24 +1,27 @@
-main #lastCat{
+main #lastCat {
     // parallax
     background-image: url('./assets/backgrounds/lastCtaBckg.svg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    .ctaSection:last-child{
+
+    .ctaSection:last-child {
         // glassmorphism
-        background: rgba( 72, 89, 105, 0.2 );
-        backdrop-filter: blur( 1px );
-        -webkit-backdrop-filter: blur( 1px );
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        background: rgba(72, 89, 105, 0.2);
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
         border-right: 0;
         border-left: 0;
         font-size: 1.3rem;
+
         .row {
             justify-content: center;
-            .ctaCol:first-child{
+
+            .ctaCol:first-child {
                 text-shadow: rgba(0, 0, 0, 1) 3px 3px 3px;
-                color:white;
+                color: white;
             }
         }
     }
