@@ -1,23 +1,43 @@
+// BTS
 import { Col } from "react-bootstrap";
+// Utils
 import { stripeFullPayment, stripeMonthlyPayment } from "../../utils/Links";
+// Components
 import BuyBtn from "../../components/CallToAction/BuyBtn";
+// Grid sys.
+const breakpoints = { xs: 12, md: 6 }
 
 const Buttons = () => (
     <>
-        <Col xs={12} md={6} className="paymentCol">
+        <Col 
+            className="paymentCol"
+            {...breakpoints}
+        >
             <div className="paymentMethod gradient">
                 <div className="innerContainer">
-                    <span className="d-block price">$600</span>
-                    <span>Abonando en un único pago<br /> con 20% de descuento</span>
+                    <span className="d-block price">
+                        $ 1150
+                    </span>
+                    <span>
+                        Abonando en un único pago<br /> con 20% de descuento
+                    </span>
                     <BuyBtn stripeLink={stripeFullPayment} />
                 </div>
             </div>
         </Col>
-        <Col xs={12} md={6} className="paymentCol">
+
+        <Col
+            className="paymentCol"
+            {...breakpoints}
+        >
             <div className="paymentMethod gradient">
                 <div className="innerContainer">
-                    <span className="d-block price">$ 275</span>
-                    <span>Abonando mes a mes</span>
+                    <span className="d-block price">
+                        $ 450
+                    </span>
+                    <span>
+                        Abonando mes a mes
+                    </span>
                     <BuyBtn stripeLink={stripeMonthlyPayment} />
                 </div>
             </div>

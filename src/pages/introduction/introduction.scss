@@ -1,10 +1,12 @@
-#presentation{
-    #logoCol{
-        display:flex;
+#presentation {
+    #logoCol {
+        display: flex;
     }
+
     #h1column {
         flex-direction: column;
         justify-content: center;
+
         p {
             font-style: italic;
         }
@@ -12,33 +14,40 @@
 }
 
 @media only screen and (min-width: 576px) {
-    #presentation .row #h1column h1{
+    #presentation .row #h1column h1 {
         font-size: 4rem;
     }
 }
+
 @media only screen and (max-width: 991px) {
     #presentation {
         padding-top: 3rem;
         text-shadow: 2px 2px 4px #281e2d;
+
         .row {
             justify-content: center;
-            #logoCol{
+
+            #logoCol {
                 justify-content: center;
-                #brandLogo{
+
+                #brandLogo {
                     width: 55%;
-                    margin-bottom:1.5rem;
+                    margin-bottom: 1.5rem;
                 }
             }
+
             #h1column {
                 text-align: center;
                 margin-bottom: 2rem;
-                h1{
+
+                h1 {
                     font-size: 2.6rem;
                 }
             }
         }
     }
 }
+
 @media only screen and (min-width: 992px) {
     #presentation {
         .row {
@@ -46,13 +55,15 @@
             padding-left: 1.5rem;
             padding-right: 1.5rem;
 
-            #logoCol{
-                display:flex;
+            #logoCol {
+                display: flex;
                 justify-content: flex-end;
-                #brandLogo{
+
+                #brandLogo {
                     margin-bottom: 0.5rem;
                 }
             }
+
             #h1column {
                 display: flex;
                 align-items: flex-start;
@@ -68,17 +79,20 @@
         }
     }
 }
+
 @media only screen and (min-width: 1200px) {
     #presentation .row {
         padding-left: 0;
         padding-right: 0;
-        #h1column h1{
+
+        #h1column h1 {
             font-size: 4rem;
         }
     }
 }
+
 @media only screen and (min-width: 1400px) {
-    #presentation .row #h1column h1{
+    #presentation .row #h1column h1 {
         font-size: 4.5rem;
     }
 }

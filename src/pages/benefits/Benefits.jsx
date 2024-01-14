@@ -11,9 +11,7 @@ const rowStyling = 'flex-column flex-lg-row justify-content-lg-evenly'
 const secondColStyling = 'd-flex align-items-center'
 // Others
 import { stripeFullPayment } from '../../utils/Links';
-const sellingSpeech = 'El camino se recorre dando el primer paso'
-
-
+const sellingSpeech = 'El camino se recorre dando el primer paso';
 // Styling
 const sectionStyling = {
     paddingTop: '8rem',

@@ -7,8 +7,8 @@ import Logo from '../../components/Logo';
 import Video from './Video'
 import Text from './Text';
 // Grid sys.
-const breakpointsOne = { sm: 11, md: 10, lg: 5, xl: 4 };
-const breakpointsTwo = { sm: 12, md: 11, lg: 7, xl: 6 };
+const breakpointsLeft = { sm: 11, md: 10, lg: 5, xl: 4 };
+const breakpointsRight = { sm: 12, md: 11, lg: 7, xl: 6 };
 
 
 const Introduction = () => (
@@ -16,18 +16,18 @@ const Introduction = () => (
         <Container fluid>
             <Row>
 
-                <Col {...breakpointsOne}>
+                <Col {...breakpointsLeft}>
                 </Col>
 
-                <Col {...breakpointsTwo} id="logoCol">
+                <Col {...breakpointsRight} id="logoCol">
                     <Logo />
                 </Col>
 
-                <Col {...breakpointsOne} id="h1column">
+                <Col {...breakpointsLeft} id="h1column">
                     <Text />
                 </Col>
 
-                <Col {...breakpointsTwo}>
+                <Col {...breakpointsRight}>
                     <Video />
                 </Col>
 

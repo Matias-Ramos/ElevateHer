@@ -1,10 +1,10 @@
 // BTS
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 // Custom components
-import SocialNetworks from './SocialNetworks';
 import Links from './Links';
+import SocialNetworks from './SocialNetworks';
 
 const Footer = () => (
     <footer>

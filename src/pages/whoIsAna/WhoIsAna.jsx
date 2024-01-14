@@ -21,7 +21,7 @@ const WhoIsAna = () => {
       <Container>
         <Row>
           <Col xs={12} className="mb-lg-2">
-            <h2 className="mb-3">Quien es Ana Restrepo?</h2>
+            <h2 className="mb-3">Quién es Ana Restrepo?</h2>
             <List />
           </Col>
           <Col>

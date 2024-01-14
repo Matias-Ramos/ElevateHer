@@ -7,29 +7,35 @@ import Header from './Header';
 const h2rowStyling = 'd-flex justify-content-center'
 const h2containerStyling = 'd-flex align-items-end justify-content-between mb-3';
 const sectionStyling = {
-    backgroundImage:"url('/src/assets/backgrounds/faqBckgDesktop.svg')", 
+    backgroundImage: "url('/src/assets/backgrounds/faqBckgDesktop.svg')",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover", 
+    backgroundSize: "cover",
     color: "white",
     borderTop: "1px solid #5e4869"
 }
+// Grid sys.
+const breakpoints = {  md: 10, lg: 10, xl: 9, xxl: 8 };
+
 
 const Faq = () => (
-    <section id="faq" style={sectionStyling}>
+    <section
+        id="faq"
+        style={sectionStyling}
+    >
         <Container>
             <Row className={h2rowStyling}>
-                <Col md={10} lg={10} xl={9} xxl={8} className={h2containerStyling}>
+                <Col {...breakpoints} className={h2containerStyling}>
                     <Header />
                 </Col>
-                <Col md={10} lg={10} xl={9} xxl={8}>
+
+                <Col {...breakpoints}>
                     <Accordion>
                         <CardMapper />
                     </Accordion>
                 </Col>
             </Row>
         </Container>
-
     </section>
 );
 

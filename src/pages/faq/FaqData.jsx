@@ -3,7 +3,6 @@ import { GiReceiveMoney } from "react-icons/gi";
 import { RiRecycleFill } from "react-icons/ri";
 import List from "./List";
 
-
 const FaqData = [
     {
       id: '0',

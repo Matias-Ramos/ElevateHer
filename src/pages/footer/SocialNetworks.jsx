@@ -5,8 +5,11 @@ import { cloneElement } from "react";
 import { FaSpotify, FaTiktok, FaYoutube } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io";
 import { SiInstagram } from "react-icons/si";
+// Styling
+const iconsStyling = { height: '100%', width: 'auto', marginRight: '0.7rem' };
+const containerStyling = { height: '2rem', display:'flex' }
 
-const socialMediaAnchors = [
+const sMediaAnchors = [
   {
     icon: <SiInstagram />,
     link: socialMediaLinks.instagram,
@@ -29,11 +32,10 @@ const socialMediaAnchors = [
   },
 ];
 
-const iconsStyling = { height: '100%', width: 'auto', marginRight: '0.7rem' };
-const containerStyling = { height: '2rem', display:'flex' }
+
 const SocialNetworks = () => (
   <div id="socialNetworks" style={containerStyling}>
-    {socialMediaAnchors.map((socialMedia, index) => (
+    {sMediaAnchors.map((socialMedia, index) => (
         <a
           key={index}
           href={socialMedia.link}

@@ -13,7 +13,10 @@ const Links = () => (
     <ol>
         { sections.map(( section ) => (
             <li key={section.id}>
-                <HashLink smooth to={`#${section.id}`}>
+                <HashLink
+                    smooth
+                    to={`#${section.id}`}
+                >
                     {section.label}
                 </HashLink>
             </li>
