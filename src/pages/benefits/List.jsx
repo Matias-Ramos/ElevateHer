@@ -7,7 +7,7 @@ const List = () => (
                <div className="benefit-item-list">
                   <ul className="customBullets">
                       <li><b>Programa personalizado</b>:<br />Adaptado a tu estilo de vida para que alcances tus metas de la manera mas directa posible.</li><br />
-                      <li><b>Orientación y acompañamiento</b>:<br />Evita sentirte perdida y recibe apoyo personalizado.</li><br />
+                      <li><b>Orientación y acompañamiento</b>:<br />Evita sentirte perdida en el gimnasio y recibe apoyo personalizado.</li><br />
                       <li><b>Educación nutricional</b>:<br />Aprende a tomar decisiones saludables, incluso en eventos sociales.</li><br />
                       <li><b>Salud Digestiva</b>:<br />Mejora tu sistema digestivo.</li><br />
                   </ul>

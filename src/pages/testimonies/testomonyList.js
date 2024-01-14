@@ -11,7 +11,7 @@ const writtenTestimonies = [
   },
   {
     personName: "Mariana Vélez",
-    wrTestimony: '"He probado muchos entrenamientos, pero ninguno como los de EmpowerHer. Los entrenamientos que me envío Ana fueron retadores pero sacaron mi mejor version. Gracias por tomarse el tiempo cada semana en los chequeos y mantenerme responsible de mis acciones. Hizo que cada session fuera desafiante y divertida. ¡Altamente recomendado!"',
+    wrTestimony: '"He probado muchos entrenamientos, pero ninguno como los de EmpowerHer. Los entrenamientos que me envío Ana fueron retadores pero sacaron mi mejor version. Gracias por tomarse el tiempo cada semana en los chequeos y mantenerme responsible de mis acciones. Hizo que cada sesión fuera desafiante y divertida. ¡Altamente recomendado!"',
   },
   {
     personName: "Juan Diego Restrepo",
