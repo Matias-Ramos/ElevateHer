@@ -9,3 +9,28 @@
         }
     }
 }
+
+@media only screen and (min-width: 992px) {
+    #whoIsAna {
+
+        .wavesDivider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wavesDivider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 103px;
+        }
+
+        .wavesDivider .shape-fill {
+            fill: #E9ECEF12;
+        }
+    }
+}
