@@ -13,37 +13,51 @@ import Header from './Header';
 import { StyledTableCell, StyledTableRow } from './StyledTable';
 // Data
 import rows from './tableData';
-// // Styling
-// const sectionStyling = {
-//     background: 'linear-gradient(180deg, rgba(107, 82, 120, 1) 0%, rgba(131, 100, 147, 1) 50%, rgba(152, 125, 166, 1) 100%)',
-//     paddingBottom: '7rem',
-// };
+// Styling
 const tableShadow = {
     boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset"
 }
-
+// Grid sys.
+const breakpoints = { md: 9, lg: 8, xl: 7, xxl: 7 }
 const Table = () => {
     return (
         <section id="table" >
             <Container fluid>
                 <Row className='justify-content-center'>
-                    <Col md={9} lg={8} xl={7} xxl={7}>
+                    <Col {...breakpoints}>
                         <Header />
-                        <TableContainer component={Paper} style={tableShadow}>
-                            <TableMui sx={{ width: "100%" }} aria-label="Tabla de precios por separado">
+                        <TableContainer 
+                            component={Paper}
+                            style={tableShadow}
+                        >
+                            <TableMui
+                                sx={{ width: "100%" }}
+                                aria-label="Tabla de precios por separado"
+                            >
                                 <TableHead>
                                     <TableRow>
-                                        <StyledTableCell>Servicio</StyledTableCell>
-                                        <StyledTableCell align="right">Valores si mensualmente adquiereses cada servicio  por separado. </StyledTableCell>
+                                        <StyledTableCell>
+                                            Servicio
+                                        </StyledTableCell>
+                                        <StyledTableCell align="right">
+                                            Valores si mensualmente adquiereses cada servicio  por separado. 
+                                        </StyledTableCell>
                                     </TableRow>
                                 </TableHead>
+
                                 <TableBody>
                                     {rows.map((row) => (
                                         <StyledTableRow key={row.name} >
-                                            <StyledTableCell component="th" scope="row" style={{fontWeight: 500}}>
+                                            <StyledTableCell
+                                                component="th"
+                                                scope="row"
+                                                style={{ fontWeight: 500 }}
+                                            >
                                                 {row.name}
                                             </StyledTableCell>
-                                            <StyledTableCell align="right">{row.price}</StyledTableCell>
+                                            <StyledTableCell align="right">
+                                                {row.price}
+                                            </StyledTableCell>
                                         </StyledTableRow>
                                     ))}
                                 </TableBody>

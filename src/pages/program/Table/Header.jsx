@@ -8,7 +8,9 @@ const headerStyling = {
 
 const Header = () => (
     <>
-        <h2 style={headerStyling}>Qué incluye el programa EMPOWERHER?</h2>
+        <h2 style={headerStyling}>
+            Qué incluye el programa EMPOWERHER?
+        </h2>
         <div className="chevronContainer">
             <div className="chevron"></div>
             <div className="chevron"></div>
