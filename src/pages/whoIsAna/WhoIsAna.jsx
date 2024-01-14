@@ -13,30 +13,32 @@ const sectionStyling = {
   textShadow: "rgba(76, 42, 42, 0.7) 2px 2px 2px"
 }
 
+const WhoIsAna = () => (
+  <section style={sectionStyling} id="whoIsAna">
+    <Container>
+      <Row>
 
+        <Col xs={12} className="mb-lg-2">
+          <h2 className="mb-3">
+            Quién es Ana Restrepo?
+          </h2>
+          <List />
+        </Col>
 
-const WhoIsAna = () => {
-  return (
-    <section style={sectionStyling} id="whoIsAna">
-      <Container>
-        <Row>
-          <Col xs={12} className="mb-lg-2">
-            <h2 className="mb-3">Quién es Ana Restrepo?</h2>
-            <List />
-          </Col>
-          <Col>
-            <Image
-              src={anaPicture}
-              alt="Fotografía de Ana Restrepo"
-              className="rounded"
-              fluid/>
-          </Col>
-          <Col xs={12} lg={6}>
-            <StoryTelling />
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  )
-}
-export default WhoIsAna
+        <Col>
+          <Image
+            src={anaPicture}
+            alt="Fotografía de Ana Restrepo"
+            className="rounded"
+            fluid />
+        </Col>
+
+        <Col xs={12} lg={6}>
+          <StoryTelling />
+        </Col>
+
+      </Row>
+    </Container>
+  </section>
+)
+export default WhoIsAna;

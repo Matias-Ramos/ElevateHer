@@ -1,23 +1,18 @@
+const heropatternsLink = "https://heropatterns.com/";
+const svgBckgLink = "https://www.svgbackgrounds.com/";
+
 const ExternalCredits = () => (
     <div id="externalCredits">
         <i>
             Bckg credits:
             <ul>
                 <li>
-                    <a
-                        href="https://heropatterns.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-1"
-                    >
+                    <a className="px-1" href={heropatternsLink} target="_blank" rel="noopener noreferrer">
                         heropatterns
                     </a>
                 </li>
                 <li>
-                    <a
-                        href="https://www.svgbackgrounds.com/"
-                        target="_blank"
-                        rel="noopener noreferrer">
+                    <a href={svgBckgLink} target="_blank" rel="noopener noreferrer">
                         svgbackgrounds
                     </a>
                 </li>

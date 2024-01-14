@@ -1,31 +1,35 @@
 @import '../../styles/color_vars.scss';
+
 #signatureSection {
     background-color: $purple-footer;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 
 
-    .row{
+    .row {
         flex-direction: column;
-        .col{
+
+        .col {
             text-align: end;
         }
     }
-    #externalCredits{
+
+    #externalCredits {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        ul{
-            
+
+        ul {
+
             padding: 0;
             display: inline-block;
             margin-top: auto;
             margin-bottom: auto;
 
-            
-            li{
+
+            li {
                 list-style-type: none;
                 margin: 0;
                 display: inline-block;
@@ -41,7 +45,8 @@
         font-size: .8rem;
         padding: 1rem 1rem 2px 1rem;
         color: #a99985;
-        a { 
+
+        a {
             color: #a99985;
         }
     }
@@ -49,20 +54,24 @@
 
 /***********************/
 /*Tablets and phones*/
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     #signatureSection {
         font-size: .9rem;
         text-align: end;
         padding-top: 2rem;
-        .container-fluid{
+
+        .container-fluid {
             background-color: $purple-signature;
-            .row{
+
+            .row {
                 $font-color: #857B8A;
                 color: $font-color;
-                a { 
+
+                a {
                     color: $font-color;
                 }
-                #externalCredits{
+
+                #externalCredits {
                     justify-content: flex-end;
                 }
             }

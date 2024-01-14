@@ -40,26 +40,31 @@ $custom-carousel-next-arrow: "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http
             transform: translateY(-50%);
         }
 
+        $y: 27rem;
+        $x: 10px;
+
         .carousel-control-prev {
-            left: 10px;
-            top: 27rem;
+            left: $x;
+            top: $y;
         }
 
         .carousel-control-next {
-            right: 10px;
-            top: 27rem;
+            right: $x;
+            top: $y;
         }
     }
 }
 
 @media only screen and (min-width: 992px) {
     #testimonies {
+        $x: 1rem;
+
         .carousel-control-prev {
-            left: 1rem;
+            left: $x;
         }
 
         .carousel-control-next {
-            right: 1rem;
+            right: $x;
         }
     }
 }

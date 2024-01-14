@@ -24,3 +24,4 @@ const StyledTableRow = styled(TableRow)(() => ({
 }));
 
 export { StyledTableCell, StyledTableRow };
+

@@ -1,10 +1,11 @@
-@font-face{
+@font-face {
   font-family: 'Isabel';
   src: url('/src/assets/fonts/isabel-bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
-@font-face{
+
+@font-face {
   font-family: 'Isabel';
   src: url('/src/assets/fonts/isabel-regular.woff2') format('woff2');
   font-weight: normal;
@@ -16,22 +17,26 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body{
+
+body {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.15rem;
   line-height: 1.7;
   background-color: #6B5278;
 }
-h1{
+
+h1 {
   font-family: 'Isabel';
   font-weight: bold;
 }
-h2, h3{
+
+h2, h3 {
   font-size: calc(1.725rem + .9vw);
   font-family: 'Isabel';
-  font-weight: normal;  
+  font-weight: normal;
 }
-section{
-  padding-top:6rem;
-  padding-bottom:6rem;
+
+section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
