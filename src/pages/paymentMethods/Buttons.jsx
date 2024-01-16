@@ -19,7 +19,7 @@ const Buttons = () => (
                         $ 1150
                     </span>
                     <span>
-                        Abonando en un único pago<br /> con 20% de descuento
+                        Abonando en un único pago<br /> con 15% de descuento
                     </span>
                     <BuyBtn stripeLink={stripeFullPayment} />
                 </div>

@@ -1,6 +1,6 @@
-const stripeFullPayment = 'https://checkout.stripe.com/c/pay/cs_live_a1JsO6w2CnJP65FikNWR5kMRbZQxtz3a6fkpZEDoZtXHmRiLDW5tSyGN3P#fidkdWxOYHwnPyd1blppbHNgWjA0SHcwMUpAfExOPEsyc2AxTXNNNGZud3x8dEBVZndRMDRpVU89X2F%2FZ05HXDxzR3ddQnRsbmpgU0AxRGNIbzZ0Tz1UVXRfSDVAbU1yaFVUbUBuYH1UbkNxNTV9dV1JZDRRdicpJ3VpbGtuQH11anZgYUxhJz8nNz1qNTV0Znc8MXZPZ3A1MG5xJ3gl';
+const stripeFullPayment = 'https://buy.stripe.com/28o00qcr94sJbu05kt';
 
-const stripeMonthlyPayment = 'https://checkout.stripe.com/c/pay/cs_live_a1Dn3MA87xJQaaCEdW2FTZ8oQWouRUJqY4NM4lVq3vNpeL4ySLgecQNv2U#fidkdWxOYHwnPyd1blppbHNgWjA0SHcwMUpAfExOPEsyc2AxTXNNNGZud3x8dEBVZndRMDRpVU89X2F%2FZ05HXDxzR3ddQnRsbmpgU0AxRGNIbzZ0Tz1UVXRfSDVAbU1yaFVUbUBuYH1UbkNxNTV9dV1JZDRRdicpJ3VpbGtuQH11anZgYUxhJz8nYFNkNmZGNEhzNWZxYUY9YFBfJ3gl';
+const stripeMonthlyPayment = 'https://buy.stripe.com/eVa3cC1Mv0ctdC8eUZ';
 
 const socialMediaLinks = {
     instagram: 'https://instagram.com/anarestrepofit',
