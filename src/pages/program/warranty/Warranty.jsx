@@ -12,7 +12,10 @@ const warrantyStyling = {
     zIndex: 2,
     backgroundColor: '#6B5278',
     color: "white",
-    boxShadow: "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px -18px 36px -18px inset, rgba(50, 50, 93, 0.25) 0px 0px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px -18px 36px -18px inset",
+    boxShadow: `
+        rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px -18px 36px -18px inset,  
+        rgba(0, 0, 0, 0.3) 0px -18px 36px -18px inset`,
     textShadow: "2px 2px 4px #281e2d",
     backgroundImage: textureURL,
 };
