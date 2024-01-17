@@ -1,6 +1,7 @@
 #presentation {
     #logoCol {
         display: flex;
+        
     }
 
     #h1column {
@@ -30,10 +31,15 @@
             #logoCol {
                 justify-content: center;
 
-                #brandLogo {
-                    width: 55%;
-                    margin-bottom: 1.5rem;
-                }
+                div{
+                    display: flex;
+                    justify-content: center;
+
+                        #brandLogo {
+                            width: 55%;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
             }
 
             #h1column {
@@ -59,9 +65,15 @@
                 display: flex;
                 justify-content: flex-end;
 
-                #brandLogo {
-                    margin-bottom: 0.5rem;
+                div{
+                    display: flex;
+                    justify-content: flex-end;
+
+                    #brandLogo {
+                        margin-bottom: 0.5rem;
+                    }
                 }
+
             }
 
             #h1column {
