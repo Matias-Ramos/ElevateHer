@@ -45,7 +45,7 @@ const CTA_Container = ({ stripeLink, text, isCTAsection = false }) => {
                     md={10}
                     lg={12}
                 >
-                    <FormattedText text={text} />
+                    {text}
                 </Col>
 
                 <Col
