@@ -29,7 +29,6 @@ const btnsStyling = {
 
 const CTA_Container = ({ stripeLink, text, isCTAsection = false }) => {
 
-
     return(
         <Container className="callToAction">
             <Row style={rowStyling}>
@@ -51,9 +50,11 @@ const CTA_Container = ({ stripeLink, text, isCTAsection = false }) => {
                     lg={isCTAsection ? 6 : 10}
                 >
                     <motion.div
-                        whileInView={{ scale: [1, 1.03, 1, 1.03, 1] } }
+                        initial={{ scale: 1 }}
+                        whileInView={{ scale: [1, 1.03, 1, 1.03, 1] }}
                         transition={{ delay: 0.4, duration: 0.75, ease: "easeInOut" }}
-                        style={btnsStyling}
+                        viewport={{ once: true }}
+                        style={btnsStyling} 
                     >
                         <ScheduleBtn />
                         <BuyBtn stripeLink={stripeLink} />
