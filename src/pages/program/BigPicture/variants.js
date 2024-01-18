@@ -28,7 +28,7 @@ const textVariant = {
         x: 0,
         transition: {
             type: "spring",
-            delay: 0.5,
+            delay: 0.35,
             bounce: 0.25,
         }
     }
