@@ -20,7 +20,7 @@ export default function ScheduleBtn() {
         variant="contained"
         onClick={handleClick}
       >
-        Agendar cita
+        Agendar<br className='d-sm-none'/> cita
       </ColorButton>
   );
 }

@@ -21,7 +21,7 @@ export default function BuyBtn({ stripeLink }) {
             variant="contained"
             onClick={handleClick}
         >
-            Adquirir programa
+            Adquirir<br className='d-sm-none'/> programa
         </ColorButton>
     );
 }
