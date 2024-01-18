@@ -10,7 +10,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 // Animation
 import applyVariantDesktopOnly from '../../../utils/applyVariants';
 import { motion } from 'framer-motion';
-import { textVariant, iconsDktpVariant, iconsMobileVariant } from './variants';
+import { textVariant, iconsDktpVariant } from './variants';
 // Styling
 const textStyling = 'd-md-flex flex-md-column justify-content-md-center'
 // Grid sys.
