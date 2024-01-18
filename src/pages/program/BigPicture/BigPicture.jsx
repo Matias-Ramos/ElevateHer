@@ -27,10 +27,8 @@ const BigPicture = () => {
 
                     <Col sm={12} md={2} >
                         <motion.div
-                            variants={iconsVariant}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
+                            {...applyVariant(iconsVariant, isMobile)}
+                            viewport={ !isMobile && {once: true} }
                             className='h-100'
                         >
                             <IconMapper />
@@ -38,7 +36,10 @@ const BigPicture = () => {
                     </Col>
 
                     <Col className={textStyling} {...breakpoints} >
-                        <motion.div {...applyVariant(textVariant, isMobile)}>
+                        <motion.div
+                            {...applyVariant(textVariant, isMobile)}
+                            viewport={ !isMobile && {once: true} }
+                        >
                             <Text />
                         </motion.div>
                     </Col>
