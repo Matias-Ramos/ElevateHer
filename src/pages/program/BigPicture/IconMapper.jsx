@@ -5,9 +5,14 @@ import { PiBowlFoodDuotone } from "react-icons/pi";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import IconInCircle from '../../../components/IconInCircle';
+// Animation
+import { motion } from "framer-motion";
+import { iconsMobileVariant } from "./variants";
 // Styling
 const iconsRowStyling = 'flex-sm-row flex-md-column gap-md-3 my-3 h-100'
 const iconsColStyling = 'd-flex justify-content-center'
+const motionCtStyling = "w-100 h-100 d-flex justify-content-center align-items-center"
+
 
 const IconMapper = () => {
     const icons = [<GiBodyBalance />, <GiBrain />, <PiBowlFoodDuotone />];
@@ -17,8 +22,16 @@ const IconMapper = () => {
             {icons.map( (icon, index) => (
                 <Col key={index} className={iconsColStyling}>
                     <IconInCircle>
+                    <motion.div
+                        initial={iconsMobileVariant.initial}
+                        whileInView={iconsMobileVariant.visible}
+                        viewport={{ once: true }}
+                        className={motionCtStyling}
+                    >
                         {icon}
+                    </motion.div>
                     </IconInCircle>
+
                 </Col>
             ))}
         </Row>

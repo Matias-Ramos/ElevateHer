@@ -8,6 +8,11 @@ import ScheduleBtn from './ScheduleBtn';
 import BuyBtn from './BuyBtn';
 // Animation
 import { motion } from 'framer-motion';
+const containerAnimation = {
+    initial : { scale: 1 },
+    whileInView: { scale: [1, 1.03, 1, 1.03, 1] },
+    transition: { delay: 0.4, duration: 0.75, ease: "easeInOut" }
+}
 // Styling
 const rowStyling = {
     display: "flex",
@@ -34,8 +39,8 @@ const CTA_Container = ({ stripeLink, text, isCTAsection = false }) => {
             <Row style={rowStyling}>
 
                 <Col
-                    className='ctaCol'
                     style={motivationalTxtStyling}
+                    className='ctaCol'
                     xs={12}
                     md={10}
                     lg={12}
@@ -50,9 +55,9 @@ const CTA_Container = ({ stripeLink, text, isCTAsection = false }) => {
                     lg={isCTAsection ? 6 : 10}
                 >
                     <motion.div
-                        initial={{ scale: 1 }}
-                        whileInView={{ scale: [1, 1.03, 1, 1.03, 1] }}
-                        transition={{ delay: 0.4, duration: 0.75, ease: "easeInOut" }}
+                        initial={containerAnimation.initial}
+                        whileInView={containerAnimation.whileInView}
+                        transition={containerAnimation.transition}
                         viewport={{ once: true }}
                         style={btnsStyling} 
                     >

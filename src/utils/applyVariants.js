@@ -9,4 +9,12 @@ const applyVariant = (variant, isMobile) => {
         }
     }
 }
+
+const applyVariantOnce = (variant) => {
+    return{
+        variants: variant, 
+        initial: "hidden",
+        whileInView: "visible"
+    }
+}
 export default applyVariant

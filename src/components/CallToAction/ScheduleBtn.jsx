@@ -8,7 +8,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
     backgroundColor: "#A400C8",
   },
   width: "100%",
-  height: "3rem"
+  height: "auto",
 }));
 
 export default function ScheduleBtn() {
