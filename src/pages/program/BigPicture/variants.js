@@ -19,7 +19,7 @@ const iconsDktpVariant = {
 /****************** */
 
 const iconsMobileVariant = {
-    initial: {
+    hidden: {
         opacity: 0,
         y: -100
     },
@@ -27,10 +27,25 @@ const iconsMobileVariant = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 0.5
+            delay: 0.75
         }
     },
 }
+
+const applyVariantMobileOnly = (isMobile) => {
+    const variant = {
+        hidden: isMobile ? iconsMobileVariant.hidden : {},
+        visible: isMobile ? iconsMobileVariant.visible : {},
+    };
+
+    return {
+        initial: {...variant.hidden},
+        whileInView: {...variant.visible}
+    }
+};
+export { applyVariantMobileOnly };
+
+/****************** */
 
 const textVariant = {
     hidden: {

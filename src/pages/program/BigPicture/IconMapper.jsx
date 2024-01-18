@@ -1,3 +1,5 @@
+// Hooks
+import useMediaQuery from '@mui/material/useMediaQuery';
 // Icons
 import { GiBodyBalance, GiBrain } from "react-icons/gi";
 import { PiBowlFoodDuotone } from "react-icons/pi";
@@ -7,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 import IconInCircle from '../../../components/IconInCircle';
 // Animation
 import { motion } from "framer-motion";
-import { iconsMobileVariant } from "./variants";
+import { applyVariantMobileOnly } from "./variants";
 // Styling
 const iconsRowStyling = 'flex-sm-row flex-md-column gap-md-3 my-3 h-100'
 const iconsColStyling = 'd-flex justify-content-center'
@@ -15,6 +17,7 @@ const motionCtStyling = "w-100 h-100 d-flex justify-content-center align-items-c
 
 
 const IconMapper = () => {
+    const isMobile = useMediaQuery('(max-width:991px)');
     const icons = [<GiBodyBalance />, <GiBrain />, <PiBowlFoodDuotone />];
 
     return (
@@ -23,8 +26,7 @@ const IconMapper = () => {
                 <Col key={index} className={iconsColStyling}>
                     <IconInCircle>
                     <motion.div
-                        initial={iconsMobileVariant.initial}
-                        whileInView={iconsMobileVariant.visible}
+                        {...applyVariantMobileOnly(isMobile)}
                         viewport={{ once: true }}
                         className={motionCtStyling}
                     >

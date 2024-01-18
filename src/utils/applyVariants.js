@@ -5,7 +5,7 @@ const applyVariantDesktopOnly = (variant, isMobile) => {
         return {
             variants: variant ,
             initial: "hidden",
-            animate: "visible"
+            whileInView: "visible"
         }
     }
 }
