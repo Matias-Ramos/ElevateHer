@@ -3,7 +3,6 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 // Custom components
-import FormattedText from './FormattedText';
 import ScheduleBtn from './ScheduleBtn';
 import BuyBtn from './BuyBtn';
 // Animation
