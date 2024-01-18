@@ -1,4 +1,4 @@
-const applyVariant = (variant, isMobile) => {
+const applyVariantDesktopOnly = (variant, isMobile) => {
     if(isMobile){
         return {}
     } else {
@@ -9,4 +9,4 @@ const applyVariant = (variant, isMobile) => {
         }
     }
 }
-export default applyVariant
+export default applyVariantDesktopOnly
