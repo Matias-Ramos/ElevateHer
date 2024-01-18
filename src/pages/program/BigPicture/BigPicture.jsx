@@ -8,7 +8,7 @@ import Text from './Text';
 // Hooks
 import useMediaQuery from '@mui/material/useMediaQuery';
 // Animation
-import applyVariant from '../../../utils/applyVariants';
+import applyVariantDesktopOnly from '../../../utils/applyVariants';
 import { motion } from 'framer-motion';
 import { textVariant, iconsDktpVariant, iconsMobileVariant } from './variants';
 // Styling
@@ -27,7 +27,7 @@ const BigPicture = () => {
 
                     <Col sm={12} md={2} >
                         <motion.div
-                            {...applyVariant(iconsDktpVariant, isMobile)}
+                            {...applyVariantDesktopOnly(iconsDktpVariant, isMobile)}
                             viewport={ !isMobile && {once: true} }
                             className='h-100'
                         >
@@ -37,7 +37,7 @@ const BigPicture = () => {
 
                     <Col className={textStyling} {...breakpoints} >
                         <motion.div
-                            {...applyVariant(textVariant, isMobile)}
+                            {...applyVariantDesktopOnly(textVariant, isMobile)}
                             viewport={ !isMobile && {once: true} }
                         >
                             <Text />

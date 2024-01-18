@@ -9,3 +9,4 @@ const applyVariantDesktopOnly = (variant, isMobile) => {
         }
     }
 }
+export default applyVariantDesktopOnly
