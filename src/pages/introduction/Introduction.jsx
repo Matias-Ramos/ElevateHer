@@ -10,12 +10,10 @@ import Text from './Text';
 import Video from './Video';
 // Animation
 import { motion } from 'framer-motion';
-import { headerVariant, videoVariant, applyLogoVariant } from './variants';
-import applyVariant from '../../utils/applyVariants';
+import { applyLogoVariant , applyTextVariant, applyVideoVariant } from './variants';
 // Grid sys.
 const breakpointsLeft = { sm: 11, md: 10, lg: 5, xl: 4 };
 const breakpointsRight = { sm: 12, md: 11, lg: 7, xl: 6 };
-
 
 
 const Introduction = () => {
@@ -37,13 +35,13 @@ const Introduction = () => {
                     </Col>
 
                     <Col {...breakpointsLeft} id="h1column">
-                        <motion.div {...applyVariant(headerVariant, isMobile)}>
+                        <motion.div {...applyTextVariant(isMobile)}>
                             <Text />
                         </motion.div>
                     </Col>
 
                     <Col {...breakpointsRight}>
-                        <motion.div {...applyVariant(videoVariant, isMobile)}>
+                        <motion.div {...applyVideoVariant()}>
                             <Video />
                         </motion.div>
                     </Col>

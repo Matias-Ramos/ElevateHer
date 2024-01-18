@@ -1,4 +1,4 @@
-const applyVariant = (variant, isMobile) => {
+const applyVariantDesktopOnly = (variant, isMobile) => {
     if(isMobile){
         return {}
     } else {
@@ -9,12 +9,3 @@ const applyVariant = (variant, isMobile) => {
         }
     }
 }
-
-const applyVariantOnce = (variant) => {
-    return{
-        variants: variant, 
-        initial: "hidden",
-        whileInView: "visible"
-    }
-}
-export default applyVariant
